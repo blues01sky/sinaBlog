@@ -1,0 +1,155 @@
+a {
+	text-decoration: none;
+}
+a:hover {
+	color: red;
+	text-decoration: underline;
+}
+
+#main {
+	width: 100%;
+	height: 900px;
+	position: relative;
+	background-image: url(../../resource/img/全屏.png);
+	background-repeat: no-repeat;
+	background-size: auto;
+}
+
+.center {
+	border-radius: 20px;
+	width: 900px;
+	height: 560px;
+	top: 160px;
+	position: absolute;
+	background-color: black;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.center_top {
+	border-radius: 20px 20px 0px 0px;
+	width: 100%;
+	height: 90px;
+	background-color: #8D8D8D;
+}
+
+.center_top_PersonalRegist {
+	border-top-left-radius: 20px;
+	font-size: 20px;
+	text-align: center;
+	line-height: 120px;
+	width: 138px;
+	height: 100%;
+	background-color: #EEEEEE;
+	float: left;
+	text-decoration: none;
+}
+
+.center_top_CompanyRegist {
+	text font-size: 20px;
+	text-align: center;
+	line-height: 120px;
+	width: 138px;
+	height: 100%;
+	float: left;
+	background-color: #C1E2B3;
+	text-decoration: none;
+}
+
+.center_regist_left {
+	float: left;
+	width: 70%;
+	background-color: pink;
+	height: 470px;
+	border-bottom-left-radius: 20px;
+	position: relative;
+}
+
+.center_regist_left_table {
+	width: 290px;
+	height: 290px;
+	top: 40px;
+	left: 80px;
+	background-color: white;
+	position: absolute;
+}
+
+.input-val {
+	width: 100px;
+	height: 32px;
+	border: 1px solid #ddd;
+	box-sizing: border-box;
+}
+
+#canvas {
+	vertical-align: middle;
+	box-sizing: border-box;
+	border: 1px solid #ddd;
+	cursor: pointer;
+}
+
+.center_regist_left_warning {
+	top: 41px;
+	left: 370px;
+	position: absolute;
+	float: left;
+}
+
+.center_regist_left_warning tr {
+	height: 38px;
+}
+
+.center_regist_left_table td {
+	text-align: left;
+	font-size: 15px;
+}
+
+.center_regist_left_table button {
+	height: 30px;
+	width: 180px;
+	background-color: #FF5722;
+	border-radius: 4px;
+	border: 2px solid rosybrown;
+}
+
+.center_regist_right {
+	float: left;
+	width: 30%;
+	height: 470px;
+	background-color: black;
+	border-bottom-right-radius: 20px;
+	position: relative;
+}
+
+.center_regist_right_head {
+	width: 100%;
+	height: 60px;
+	background-color: white;
+	position: relative;
+}
+
+.center_regist_right_head p {
+	position: absolute;
+	text-align: center;
+	top: 20px;
+	left: 30px;
+}
+
+.center_regist_right_head a {
+	font-size: 20px;
+}
+
+.center_regist_right_help {
+	width: 100%;
+	height: 410px;
+	border-bottom-right-radius: 20px;
+	background-color: yellow;
+}
+
+.center_regist_right_help p {
+	position: absolute;
+	left: 30px;
+}
+
+.center_regist_right_help a {}

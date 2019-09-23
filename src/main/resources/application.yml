@@ -29,6 +29,6 @@ spring:
         naming.physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
       show-sql: true
   resources:
-      static-locations: classpath:/META-INF/resources/,classpath:/resources/,classpath:/static/,classpath:/public/
+      static-locations: classpath:/templates/static/,classpath:/META-INF/resources/,classpath:/resources/,classpath:/resources/,classpath:/static/,classpath:/public/
       
       
