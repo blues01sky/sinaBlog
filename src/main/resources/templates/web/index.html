@@ -5,7 +5,7 @@
 		<title></title>
 		<link rel="stylesheet" th:href="@{/css/index.css}" />
 		<script th:src="@{/js/index.js}"></script>
-		<script type="text/javascript" th:src="@{/../resource/jquery/jquery-3.4.1.min.js}"></script>
+		<script type="text/javascript" th:src="@{/jquery/jquery-3.4.1.min.js}"></script>
 		<script>
 			function index_top_search() {
 				$("#index_top_search_input").css("border", "1px solid orange")
@@ -78,32 +78,32 @@
 			<div class="index_top_logo"></div>
 			<div class="index_top_search">
 				<input id="index_top_search_input" placeholder="搜索" onblur="index_top_search();" />
-				<img th:src="@{/../resource/img/admin/search_logo.png}" />
+				<img th:src="@{/img/admin/search_logo.png}" />
 			</div>
 			<div class="index_top_BigBlank"></div>
 			<div class="index_top_navigation">
 				<div class="index_top_navigation_button">
-					<img th:src="@{/../resource/img/admin/chat.png}" />
+					<img th:src="@{/img/admin/chat.png}" />
 					<a th:href="@{#}" onclick="">按钮</a>
 				</div>
 				<div class="index_top_navigation_button">
-					<img th:src="@{/../resource/img/admin/chat.png}" />
+					<img th:src="@{/img/admin/chat.png}" />
 					<a th:href="@{#}" onclick="">按钮</a>
 				</div>
 				<div class="index_top_navigation_button">
-					<img th:src="@{/../resource/img/admin/chat.png}" />
+					<img th:src="@{/img/admin/chat.png}" />
 					<a th:href="@{#}" onclick="">按钮</a>
 				</div>
 				<div class="index_top_navigation_button">
-					<img th:src="@{/../resource/img/admin/chat.png}" />
+					<img th:src="@{/img/admin/chat.png}" />
 					<a th:href="@{#}" onclick="">按钮</a>
 				</div>
 				<div class="index_top_navigation_button">
-					<img th:src="@{/../resource/img/admin/chat.png}" />
+					<img th:src="@{/img/admin/chat.png}" />
 					<a th:href="@{#}" onclick="">按钮</a>
 				</div>
 				<div class="index_top_navigation_button">
-					<img th:src="@{/../resource/img/admin/chat.png}" />
+					<img th:src="@{/img/admin/chat.png}" />
 					<a th:href="@{#}" onclick="">按钮</a>
 				</div>
 
@@ -205,7 +205,7 @@
 							</div>
 							<div class="user_login_form_ScanCode">
 								<div class="user_login_form_ScanCode_code">
-									<img th:src="@{/../resource/img/erweima.png}" />
+									<img th:src="@{/img/erweima.png}" />
 								</div>
 								<div class="user_login_form_ScanCode_text">
 									<span>请使用最新版客户端扫描</span>
@@ -234,14 +234,11 @@
 			<div class="index_main_blank"></div>
 			<div class="index_main_navigation">
 				<div class="index_main_navigation_button_select">热点</div>
-				<div class="index_main_navigation_button">热点</div>
-				<div class="index_main_navigation_button">热点</div>
-				<div class="index_main_navigation_button">热点</div>
-				<div class="index_main_navigation_button">热点</div>
+				<div class="index_main_navigation_button" th:each="navication:${navications}" th:text="${navication.navication}"></div>
 			</div>
 			<div class="index_main_content">
 				<div class="index_main_content_shuffling">
-					<img th:src="@{/../resource/img/全屏.png}" />
+					<img th:src="@{/img/全屏.png}" />
 					<div class="index_main_content_shuffling_dot" style="left: 35%;"></div>
 					<div class="index_main_content_shuffling_dot" style="left: 40%;"></div>
 					<div class="index_main_content_shuffling_dot" style="left: 45%;"></div>
@@ -253,7 +250,7 @@
 				<div class="index_main_content_video">
 					<div class="index_main_content_video_left">
 						<video muted="muted" controls="controls" loop="loop">
-							<source th:src="@{/../resource/video/拥抱星星的月亮_13_Trim_Trim.mp4}" type="video/mp4">
+							<source th:src="@{/video/拥抱星星的月亮_13_Trim_Trim.mp4}" type="video/mp4">
 							</source>
 						</video>
 					</div>
@@ -266,20 +263,20 @@
 							<a style="color: red;" href="">#如法国奢#</a></span>
 						</div>
 						<div class="index_main_content_video_right_auther">
-							<img th:src="@{/../resource/img/全屏.png}" />
+							<img th:src="@{/img/全屏.png}" />
 							<a th:href="@{#}"><span>用户是</span></a><span>&nbsp;&nbsp;&nbsp;&nbsp;8月25日&nbsp;&nbsp;16:17:30</span>
 						</div>
 						<div class="index_main_content_video_right_option">
 							<div class="index_main_content_video_right_remark">
-								<img th:src="@{/../resource/img/admin/password.png}" />
+								<img th:src="@{/img/admin/password.png}" />
 								<a th:href="@{#}"><span>12345678</span></a>
 							</div>
 							<div class="index_main_content_video_right_remark">
-								<img th:src="@{/../resource/img/admin/password.png}" />
+								<img th:src="@{/img/admin/password.png}" />
 								<a th:href="@{#}"><span>12345678</span></a>
 							</div>
 							<div class="index_main_content_video_right_remark">
-								<img th:src="@{/../resource/img/admin/password.png}" />
+								<img th:src="@{/img/admin/password.png}" />
 								<a th:href="@{#}"><span>12345678</span></a>
 							</div>
 						</div>
@@ -293,34 +290,34 @@
 					</div>
 					<div class="index_main_content_picture_photos">
 						<div class="index_main_content_picture_photo_head">
-							<img th:src="@{/../resource/img/全屏.png}" />
+							<img th:src="@{/img/全屏.png}" />
 						</div>
 						<div class="index_main_content_picture_photo">
-							<img th:src="@{/../resource/img/全屏.png}" />
+							<img th:src="@{/img/全屏.png}" />
 						</div>
 						<div class="index_main_content_picture_photo">
-							<img th:src="@{/../resource/img/全屏.png}" />
+							<img th:src="@{/img/全屏.png}" />
 						</div>
 						<div class="index_main_content_picture_photo">
-							<img th:src="@{/../resource/img/全屏.png}" />
+							<img th:src="@{/img/全屏.png}" />
 						</div>
 					</div>
 					<div class="index_main_content_picture_remark">
 						<div class="index_main_content_picture_remark_left">
-							<img th:src="@{/../resource/img/全屏.png}" />
+							<img th:src="@{/img/全屏.png}" />
 							<a th:href="@{#}"><span>用户是</span></a><span>&nbsp;&nbsp;&nbsp;&nbsp;8月25日&nbsp;&nbsp;16:17:30</span>
 						</div>
 						<div class="index_main_content_picture_remark_right">
 							<div class="index_main_content_picture_remark_right_remark">
-								<img th:src="@{/../resource/img/admin/password.png}" />
+								<img th:src="@{/img/admin/password.png}" />
 								<a th:href="@{#}"><span>12345678</span></a>
 							</div>
 							<div class="index_main_content_picture_remark_right_remark">
-								<img th:src="@{/../resource/img/admin/password.png}" />
+								<img th:src="@{/img/admin/password.png}" />
 								<a th:href="@{#}"><span>12345678</span></a>
 							</div>
 							<div class="index_main_content_picture_remark_right_remark">
-								<img th:src="@{/../resource/img/admin/password.png}" />
+								<img th:src="@{/img/admin/password.png}" />
 								<a th:href="@{#}"><span>12345678</span></a>
 							</div>
 						</div>
@@ -328,7 +325,7 @@
 				</div>
 				<div class="index_main_content_text">
 					<div class="index_main_content_text_picture">
-						<img th:src="@{/../resource/img/全屏.png}" />
+						<img th:src="@{/img/全屏.png}" />
 					</div>
 					<div class="index_main_content_text_text">
 						<a style="color: red;" th:href="@{#}"></a>
@@ -339,20 +336,20 @@
 					</div>
 					<div class="index_main_content_text_RightBottom">
 						<div class="index_main_content_text_RightBottom_left_auther">
-							<img th:src="@{/../resource/img/全屏.png}" />
+							<img th:src="@{/img/全屏.png}" />
 							<a th:href="@{#}"><span>用户是</span></a><span>&nbsp;&nbsp;&nbsp;&nbsp;8月25日&nbsp;&nbsp;16:17:30</span>
 						</div>
 						<div class="index_main_content_text_RightBottom_right">
 							<div class="index_main_content_text_RightBottom_right_remark">
-								<img th:src="@{/../resource/img/admin/password.png}" />
+								<img th:src="@{/img/admin/password.png}" />
 								<a th:href="@{#}"><span>12345678</span></a>
 							</div>
 							<div class="index_main_content_text_RightBottom_right_remark">
-								<img th:src="@{/../resource/img/admin/password.png}" />
+								<img th:src="@{/img/admin/password.png}" />
 								<a th:href="@{#}"><span>12345678</span></a>
 							</div>
 							<div class="index_main_content_text_RightBottom_right_remark">
-								<img th:src="@{/../resource/img/admin/password.png}" />
+								<img th:src="@{/img/admin/password.png}" />
 								<a th:href="@{#}"><span>12345678</span></a>
 							</div>
 						</div>
@@ -375,7 +372,7 @@
 							</div>
 						</div>
 						<div class="index_main_right_LoginAndRegist_erweima">
-							<img th:src="@{/../resource/img/erweima.png}" />
+							<img th:src="@{/img/erweima.png}" />
 							<span>使用最新版客户端下载软件</span>
 						</div>
 						<div class="index_main_right_LoginAndRegist_form">
@@ -394,11 +391,11 @@
 								<span>其他方式：</span>
 							</div>
 							<div class="index_main_right_LoginAndRegist_other_center">
-								<img th:src="@{/../resource/img/admin/index.png}" />
-								<img th:src="@{/../resource/img/admin/index.png}" />
-								<img th:src="@{/../resource/img/admin/index.png}" />
-								<img th:src="@{/../resource/img/admin/index.png}" />
-								<img th:src="@{/../resource/img/admin/index.png}" />
+								<img th:src="@{/img/admin/index.png}" />
+								<img th:src="@{/img/admin/index.png}" />
+								<img th:src="@{/img/admin/index.png}" />
+								<img th:src="@{/img/admin/index.png}" />
+								<img th:src="@{/img/admin/index.png}" />
 							</div>
 							<div class="index_main_right_LoginAndRegist_other_right">
 								<span><a th:href="@{#}">立即注册</a></span>
@@ -458,19 +455,19 @@
 						</div>
 						<div class="index_main_right_LookForPeople_class">
 							<div class="index_main_right_LookForPeople_class_content">
-								<img th:src="@{/../resource/img/admin/music.png}" />
+								<img th:src="@{/img/admin/music.png}" />
 								<a th:href="@{#}">大师</a>
 							</div>
 							<div class="index_main_right_LookForPeople_class_content">
-								<img th:src="@{/../resource/img/admin/music.png}" />
+								<img th:src="@{/img/admin/music.png}" />
 								<a th:href="@{#}">大师</a>
 							</div>
 							<div class="index_main_right_LookForPeople_class_content">
-								<img th:src="@{/../resource/img/admin/music.png}" />
+								<img th:src="@{/img/admin/music.png}" />
 								<a th:href="@{#}">大师</a>
 							</div>
 							<div class="index_main_right_LookForPeople_class_content">
-								<img th:src="@{/../resource/img/admin/music.png}" />
+								<img th:src="@{/img/admin/music.png}" />
 								<a th:href="@{#}">大师</a>
 							</div>
 						</div>
