@@ -1,0 +1,1161 @@
+a {
+	color: black;
+	text-decoration: none;
+}
+
+a:hover {
+	color: orange;
+	text-decoration: underline;
+}
+
+
+#index_top {
+	top: 0;
+	width: 100%;
+	height: 50px;
+	float: left;
+	position: fixed;
+	z-index: 9999;
+	background-color: white;
+	border-bottom: 2px solid #999999;
+}
+
+.index_top_blank {
+	width: 5%;
+	height: 100%;
+	float: left;
+	background-color: whitesmoke;
+}
+
+.index_top_logo {
+	width: 10%;
+	height: 100%;
+	background-image: url(../../resource/img/admin/logo.png);
+	float: left;
+}
+
+.index_top_search {
+	width: 25%;
+	height: 100%;
+	background-color: #FFFFFF;
+	float: left;
+	position: relative;
+}
+
+.index_top_search input {
+	margin: 2%;
+	width: 95%;
+	height: 60%;
+	font-size: 0.9em;
+	background-color: #EEEEEE;
+	border: 1px solid #C0C4CC;
+	outline: none;
+}
+
+.index_top_search img {
+	position: absolute;
+	right: 5%;
+	top: 30%;
+}
+
+.index_top_BigBlank {
+	width: 9%;
+	height: 100%;
+	float: left;
+	background-color: #FFFFFF;
+}
+
+.index_top_navigation {
+	width: 30%;
+	height: 100%;
+	float: left;
+}
+
+.index_top_navigation_button {
+	margin-top: 4%;
+	margin-left: 1%;
+	width: 15%;
+	height: 60%;
+	float: left;
+	position: relative;
+}
+
+.index_top_navigation_button img {
+	margin-top: 6%;
+	width: 18px;
+	height: 18px;
+}
+
+.index_top_navigation_button a {
+	position: absolute;
+	font-size: 1.05em;
+	text-decoration: none;
+}
+
+.index_top_user {
+	width: 16%;
+	height: 100%;
+	float: left;
+}
+
+.index_top_user_regist {
+	width: 49%;
+	height: 100%;
+	border-right: 1px solid black;
+	float: left;
+	text-align: center;
+	line-height: 350%;
+}
+
+.index_top_user_login {
+	width: 49%;
+	height: 100%;
+	float: left;
+	text-align: center;
+	line-height: 350%;
+}
+
+.index_top_regist_cover {
+	display: none;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: #000;
+	opacity: 0.7;
+	z-index: 4500;
+}
+
+.user_login
+{
+	display: none;
+	background-color: white;
+	border-top: 2px solid red;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 600px;
+	height: 380px;
+	opacity: 1;
+	z-index: 4501;
+}
+.user_login_exit
+{
+	width: 95%;
+	height: 6%;
+	margin: 1.5% 0 0 3% ;
+	line-height: 100%;
+	text-align: right;
+	z-index: 4502;
+	font-size: 1.2em;
+}
+.user_login_exit_button{
+	width: 3%;
+	float: right;
+	height: 100%;
+}
+.user_login_exit_button::before{
+	content: "\2716";
+}
+.user_login_select
+{
+	width: 100%;
+	height: 14%;
+}
+.user_login_select_black
+{
+	width: 15%;
+	height: 100%;
+	float: left;
+}
+.user_login_select_left
+{
+	display: block;
+	width: 35%;
+	height: 100%;
+	float: left;
+	border-bottom: 2px solid burlywood;
+}
+.user_login_select_left a
+{
+	text-align: center;
+	font-weight: 800;
+}
+.user_login_select_left a:hover
+{
+	text-decoration: none;
+	font-size: 1.0em;
+	font-weight: 800;
+	color: #000000;
+}
+.user_login_select_right
+{
+	width: 35%;
+	height: 100%;
+	float: left;
+}
+.user_login_select_right a:hover
+{
+	text-decoration: none;
+	font-size: 1.0em;
+	font-weight: 800;
+	color: #000000;
+}
+.user_login_messagelogin
+{
+	margin-bottom: 5%;
+	height: 75%;
+	width: 100%;
+	display: none;
+}
+.user_login_form
+{
+	margin-bottom: 5%;
+	height: 75%;
+	width: 100%;
+}
+.user_login_form_UserAndPassword
+{
+	display: none;
+	margin-left: 30%;
+	margin-right: 30%;
+	width: 40%;
+	height: 100%;
+}
+.user_login_form_UserAndPassword_black{
+	height: 5%;
+	width: 100%;
+}
+.user_login_form_UserAndPassword_form
+{
+	height: 60%;
+	width: 100%;
+}
+.user_login_form_UserAndPassword_form_input{
+	width: 100%;
+	height: 28%;
+	float: left;
+	position: relative;
+}
+.user_login_form_UserAndPassword_form_input input
+{
+	position: absolute;
+	width: 82%;
+	height: 50%;
+	top: 25%;
+	left: 2%;
+	background-image: url(../../resource/img/admin/search_logo.png);
+	background-repeat: no-repeat;
+	background-position: 1% 50%;
+	padding-left: 12%;
+	border: 1px solid #00FFFF;
+}
+.user_login_form_UserAndPassword_form_input input:focus{
+	border: 2px solid #457ADB;
+}
+.user_login_form_UserAndPassword_form_input_forget{
+	height: 17%;
+	width: 100%;
+	float: left;
+}
+.user_login_form_UserAndPassword_form_input_forget_left{
+	width: 50%;
+	height: 100%;
+	float: left;
+	text-align: left;
+	line-height: 10%;
+	vertical-align: middle;
+}
+.user_login_form_UserAndPassword_form_input_forget_left input{
+	vertical-align: middle;
+}
+.user_login_form_UserAndPassword_form_input_forget_left span{
+	font-size: .8em;
+	vertical-align: middle;
+}
+.user_login_form_UserAndPassword_form_input_forget_right{
+	width: 50%;
+	height: 100%;
+	line-height: 180%;
+	float: left;
+	text-align: right;
+}
+.user_login_form_UserAndPassword_form_input_forget_right span{
+	font-size: .9em;
+}
+.user_login_form_UserAndPassword_form_input_submit{
+	height: 27%;
+	width: 100%;
+	float: left;
+}
+.user_login_form_UserAndPassword_form_input_submit input
+{
+	width: 90%;
+	height: 90%;
+	background-color: orange;
+	border-radius: 5px;
+}
+.user_login_form_UserAndPassword_QQlogin
+{
+	width: 100%;
+	height: 20%;
+	position: relative;
+}
+.user_login_form_UserAndPassword_QQlogin input
+{
+	left: 5%;
+	top: 25%;
+	width: 90%;
+	height: 65%;
+	position: absolute;
+	background-color: #FFB800;
+	border-radius: 5px;
+}
+.user_login_form_regist
+{
+	float: left;
+	width: 100%;
+	height: 15%;
+}
+.user_login_form_regist_left
+{
+	float: left;
+	width: 50%;
+	height: 100%;
+}
+.user_login_form_regist_right
+{
+	float: left;
+	width: 50%;
+	height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.user_login_messagelogin_form_UserAndPassword
+{
+	display: none;
+	margin-left: 30%;
+	margin-right: 30%;
+	width: 40%;
+	height: 100%;
+}
+.user_login_messagelogin_form_UserAndPassword_black{
+	height: 5%;
+	width: 100%;
+}
+.user_login_messagelogin_form_UserAndPassword_form
+{
+	height: 60%;
+	width: 100%;
+}
+.user_login_messagelogin_form_UserAndPassword_form_input_forget{
+	height: 17%;
+	width: 100%;
+	float: left;
+}
+.user_login_messagelogin_form_UserAndPassword_form_phone{
+	width: 100%;
+	height: 50px;
+}
+.user_login_messagelogin_form_UserAndPassword_form_phone input{
+	width: 80%;
+	height: 30px;
+	vertical-align: middle;
+	padding-left: 25px;
+	background-image: url(../../resource/img/admin/video.png);
+	background-repeat: no-repeat;
+	background-position: 4px 6px;
+	border: 1px solid #00FFFF;
+}
+.user_login_messagelogin_form_UserAndPassword_form_phone input:focus{
+	border: 2px solid #457ADB;
+}
+.user_login_messagelogin_form_UserAndPassword_form_verificationCode{
+	width: 100%;
+	height: 50px;
+}
+.user_login_messagelogin_form_UserAndPassword_form_verificationCode button{
+	width: 46%;
+	height: 35px;
+	margin-left:2% ;
+	margin-right: 2%;
+	margin-top: 12px;
+	float: left;
+}
+.user_login_messagelogin_form_UserAndPassword_form_verificationCode input{
+	width: 46%;
+	height: 30px;
+	border: 1px solid #00FFFF;
+}
+.user_login_messagelogin_form_UserAndPassword_form_verificationCode input:focus{
+	border: 2px solid #457ADB;
+}
+.user_login_messagelogin_form_UserAndPassword_form_input_forget_left{
+	width: 50%;
+	height: 100%;
+	float: left;
+	text-align: left;
+	line-height: 10%;
+	vertical-align: middle;
+}
+.user_login_messagelogin_form_UserAndPassword_form_input_forget_left input{
+	vertical-align: middle;
+}
+.user_login_messagelogin_form_UserAndPassword_form_input_forget_left span{
+	font-size: .8em;
+	vertical-align: middle;
+}
+.user_login_messagelogin_form_UserAndPassword_form_input_forget_right{
+	width: 50%;
+	height: 100%;
+	line-height: 180%;
+	float: left;
+	text-align: right;
+}
+.user_login_messagelogin_form_UserAndPassword_form_input_forget_right span{
+	font-size: .9em;
+}
+.user_login_messagelogin_form_UserAndPassword_form_input_submit{
+	height: 27%;
+	width: 100%;
+	float: left;
+}
+.user_login_messagelogin_form_UserAndPassword_form_input_submit input
+{
+	width: 90%;
+	height: 90%;
+	background-color: orange;
+	border-radius: 5px;
+}
+.user_login_messagelogin_form_UserAndPassword_QQlogin
+{
+	width: 100%;
+	height: 20%;
+	position: relative;
+}
+.user_login_messagelogin_form_UserAndPassword_QQlogin input
+{
+	left: 5%;
+	top: 20%;
+	width: 90%;
+	height: 65%;
+	position: absolute;
+	background-color: #FFB800;
+	border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.user_login_form_ScanCode{
+	display: none;
+	width: 40%;
+	height: 90%;
+	margin: 0 30% 0 30%;
+}
+.user_login_form_ScanCode_code
+{
+	margin: 12% 0 0 10%;
+	width: 80%;
+	height: 70%;
+}
+.user_login_form_ScanCode_code img{
+	width: 90%;
+	height: auto;
+}
+.user_login_form_ScanCode_text{
+	margin-left: 10%;
+	width: 80%;
+	height: 10%;
+	text-align: center;
+	line-height: 180%;
+}
+.user_login_form_ScanCode_notice{
+	width: 100%;
+	height: 20%;
+}
+
+
+#index_main {
+	margin: 44px 0px 51px 0px;
+	width: 100%;
+	height: auto;
+	float: left;
+	position: relative;
+	z-index: 5000;
+}
+
+.index_main_navigation {
+	margin: 0.5% 0 0 8%;
+	width: 8%;
+	float: left;
+}
+
+.index_main_navigation_button {
+	line-height: 40px;
+	margin: 3% 10% 0 10%;
+	width: 80%;
+	height: 40px;
+	background-color: white;
+	text-align: center;
+	border-radius: 3px;
+	font-weight: 400;
+}
+
+.index_main_navigation_button_select {
+	margin: 3% 10% 0 10%;
+	width: 80%;
+	height: 40px;
+	border-radius: 3px;
+	background-color: red;
+	color: white;
+	font-size: 1.2em;
+	text-align: center;
+	line-height: 40px;
+}
+
+.index_main_navigation_button:hover {
+	text-align: center;
+	background-color: red;
+	color: white;
+}
+
+.index_main_content {
+	margin: 0.5% 0 0 0.5%;
+	width: 52%;
+	float: left;
+	text-align: center;
+}
+
+.index_main_content_shuffling {
+	width: 100%;
+	height: 300px;
+	float: left;
+	margin-bottom: 20px;
+	position: relative;
+}
+
+.index_main_content_shuffling img {
+	width: 100%;
+	height: 100%;
+}
+
+.index_main_content_shuffling_dot {
+	position: absolute;
+	bottom: 3%;
+	width: 8px;
+	height: 8px;
+	background-color: white;
+	border-radius: 10px;
+}
+
+.index_main_content_shuffling_dot:hover {
+	background-color: red;
+}
+
+.index_main_content_video {
+	float: left;
+	height: 200px;
+	width: 100%;
+	border-bottom: 1px solid #B2B2B2;
+	margin-top: 5px;
+}
+
+.index_main_content_video_left {
+	margin: 1% 0 0 0;
+	float: left;
+	width: 50%;
+	height: 94%;
+}
+
+.index_main_content_video_left video {
+	width: 100%;
+	height: 100%;
+}
+
+.index_main_content_video_right {
+	margin: 1% 0 1% 2%;
+	float: left;
+	width: 48%;
+	height: 93%;
+	position: relative;
+}
+
+.index_main_content_video_right_topic {
+	width: auto;
+	height: auto;
+	float: left;
+	font-size: 1.0em;
+}
+
+.index_main_content_video_right_content {
+	width: auto;
+	height: auto;
+	float: left;
+	text-align: left;
+	font-size: 1.0em;
+}
+
+.index_main_content_video_right_auther {
+	margin-top: 2%;
+	float: left;
+}
+
+.index_main_content_video_right_auther img {
+	height: 20px;
+	width: 26px;
+	border-radius: 100%;
+}
+
+.index_main_content_video_right_auther span {
+	font-size: .8em;
+	vertical-align: 25%;
+	font-weight: 100;
+}
+
+.index_main_content_video_right_option {
+	position: absolute;
+	text-align: right;
+	width: 100%;
+	height: 12%;
+	bottom: 0;
+}
+
+.index_main_content_video_right_remark {
+	float: right;
+	width: 28%;
+	height: auto;
+}
+
+.index_main_content_video_right_remark span {
+	vertical-align: 30%;
+	border-right: 1px solid black;
+	padding-right: 10%;
+	font-size: .2em;
+}
+
+.index_main_content_picture {
+	float: left;
+	height: 200px;
+	width: 100%;
+	border-bottom: 1px solid #B2B2B2;
+	;
+	margin-top: 5px;
+}
+
+.index_main_content_picture_title {
+	width: 100%;
+	height: 15%;
+	overflow: hidden;
+	white-space: nowrap;
+	text-align: left;
+}
+
+.index_main_content_picture_photos {
+	width: 100%;
+	height: 70%;
+}
+
+.index_main_content_picture_photos img {
+	width: 100%;
+	height: auto;
+}
+
+.index_main_content_picture_photo_head {
+	float: left;
+	width: 25%;
+	height: 100%;
+}
+
+.index_main_content_picture_photo {
+	float: left;
+	margin-left: 1%;
+	width: 24%;
+	height: 100%;
+}
+
+.index_main_content_picture_remark {
+	width: 100%;
+	height: 15%;
+}
+
+.index_main_content_picture_remark_left {
+	width: 50%;
+	height: 100%;
+	float: left;
+}
+
+.index_main_content_picture_remark_left img {
+	height: 20px;
+	width: 26px;
+	border-radius: 100%;
+	float: left;
+}
+
+.index_main_content_picture_remark_left span {
+	font-size: .8em;
+	vertical-align: 25%;
+	font-weight: 100;
+	float: left;
+}
+
+.index_main_content_picture_remark_right {
+	width: 50%;
+	height: 100%;
+	float: right;
+}
+
+.index_main_content_picture_remark_right_remark {
+	width: 26%;
+	height: 100%;
+	float: right;
+}
+
+.index_main_content_picture_remark_right_remark span {
+	vertical-align: 30%;
+	border-right: 1px solid black;
+	padding-right: 10%;
+	font-size: .2em;
+}
+
+.index_main_content_text {
+	float: left;
+	height: 180px;
+	width: 100%;
+	border-bottom: 1px solid #B2B2B2;
+	margin-top: 5px;
+	vertical-align: middle;
+}
+
+.index_main_content_text_picture {
+	margin: 0.5% 0 0 0;
+	float: left;
+	width: 25%;
+	height: 93%;
+}
+
+.index_main_content_text_picture img {
+	height: 100%;
+	width: 100%;
+}
+
+.index_main_content_text_text {
+	display: flex;
+	align-items: center;
+	margin: 3% 0 0 1%;
+	float: left;
+	width: 74%;
+	height: 65%;
+	text-align: left;
+	line-height: 180%;
+}
+
+.index_main_content_text_RightBottom {
+	margin-left: 1%;
+	float: left;
+	width: 74%;
+	height: 14%;
+}
+
+.index_main_content_text_RightBottom_left_auther {
+	float: left;
+}
+
+.index_main_content_text_RightBottom_left_auther img {
+	height: 20px;
+	width: 26px;
+	border-radius: 100%;
+}
+
+.index_main_content_text_RightBottom_left_auther span {
+	font-size: .8em;
+	vertical-align: 25%;
+	font-weight: 100;
+}
+
+.index_main_content_text_RightBottom_right {
+	width: 60%;
+	height: 100%;
+	float: right;
+}
+
+.index_main_content_text_RightBottom_right_remark {
+	width: 30%;
+	height: 100%;
+	float: right;
+}
+
+.index_main_content_text_RightBottom_right_remark span {
+	vertical-align: 30%;
+	border-right: 1px solid black;
+	padding-right: 10%;
+	font-size: .2em;
+}
+
+.index_main_right {
+	margin: 0.5% 0 0 0.5%;
+	float: left;
+	width: 25%;
+	height: auto;
+	background-color: white;
+}
+
+.index_main_right_login {
+	width: 100%;
+	height: 330px;
+	float: left;
+}
+
+.index_main_right_LoginAndRegist {
+	margin: 5% 5% 5% 5%;
+	width: 90%;
+	height: 90%;
+	border: 1px solid #D2D2D2;
+}
+
+.index_main_right_LoginAndRegist_select {
+	width: 100%;
+	height: 22%;
+}
+
+.index_main_right_LoginAndRegist_select_left {
+	margin-left: 10%;
+	margin-top: 4%;
+	border-bottom: 2px solid orange;
+	width: 40%;
+	height: 80%;
+	float: left;
+	text-align: center;
+	font-size: 1.05em;
+}
+
+.index_main_right_LoginAndRegist_select_right {
+	margin-right: 10%;
+	margin-top: 4%;
+	border-bottom: 2px solid white;
+	width: 40%;
+	height: 80%;
+	float: left;
+	text-align: center;
+	font-size: 1.05em;
+}
+
+.index_main_right_LoginAndRegist_erweima {
+	margin: 0 20% 0 20%;
+	width: 60%;
+	height: 60%;
+	font-size: .8em;
+	text-align: center;
+	display: none;
+}
+
+.index_main_right_LoginAndRegist_erweima img {
+	margin: 10% 15% 0 15%;
+	width: 70%;
+	height: auto;
+}
+
+.index_main_right_LoginAndRegist_form {
+	width: 100%;
+	height: 60%;
+	display: block;
+}
+
+.index_main_right_LoginAndRegist_form_body {
+	width: 100%;
+	height: 100%;
+}
+
+.index_main_right_LoginAndRegist_form_body #user,
+#password {
+	margin: 5% 10% 0 10%;
+	width: 70%;
+	outline: none;
+	height: 15%;
+	background-image: url(../../resource/img/admin/search_logo.png);
+	background-repeat: no-repeat;
+	background-position: 1%;
+	padding-left: 7%;
+	border: 2px solid #9F9F9F;
+}
+
+.index_main_right_LoginAndRegist_form_rember {
+	margin: 5% 10% 0 10%;
+	height: 15%;
+	width: 80%;
+	position: relative;
+}
+
+.index_main_right_LoginAndRegist_form_rember input {
+	width: 10%;
+	height: auto;
+	text-align: left;
+	float: left;
+}
+
+.index_main_right_LoginAndRegist_form_rember a {
+	float: right;
+	width: 50%;
+	height: auto;
+	color: orange;
+	text-decoration: none;
+}
+
+.index_main_right_LoginAndRegist_form_body #submit {
+	margin: 0 10% 0 10%;
+	width: 80%;
+	outline: none;
+	height: 20%;
+	font-size: 1.02em;
+}
+
+.index_main_right_LoginAndRegist_other {
+	margin-top: 4%;
+	width: 100%;
+	height: 18%;
+}
+
+.index_main_right_LoginAndRegist_other_left {
+	width: 22%;
+	height: auto;
+	margin-left: 10%;
+	font-size: .8em;
+	float: left;
+}
+
+.index_main_right_LoginAndRegist_other_center {
+	width: 38%;
+	height: auto;
+	float: left;
+}
+
+.index_main_right_LoginAndRegist_other_right {
+	width: 20%;
+	height: auto;
+	margin-right: 6%;
+	font-size: .8em;
+	float: right;
+}
+
+.index_main_right_hot {
+	border-top: 1px solid red;
+	float: left;
+	width: 100%;
+	height: 444px;
+	margin-top: 30px;
+	background-color: #C0C0C0;
+}
+
+.index_main_right_hot_title {
+	height: 6%;
+	width: 80%;
+	margin: 5% 10% 1% 10%;
+	font-weight: 900;
+	font-size: 1.1em;
+}
+
+.index_main_right_hot_content {
+	height: 83%;
+	width: 80%;
+	margin: 0 10% 0 10%;
+}
+
+.index_main_right_hot_content_topic {
+	margin: 1% 0 1% 0;
+	width: 100%;
+	height: 19%;
+	text-align: left;
+	line-height: 300%;
+}
+
+.index_main_right_hot_content_topic_picture {
+	float: left;
+	margin: 2% 6% 2% 2%;
+	width: 20%;
+	height: 78%;
+	background-color: #000000;
+}
+
+.index_main_right_hot_content_topic_title {
+	float: left;
+	width: 72%;
+	height: 60%;
+}
+
+.index_main_right_hot_content_topic_comment {
+	float: left;
+	width: 72%;
+	height: 40%;
+	font-weight: 100;
+	font-size: .7em;
+	margin: auto;
+	line-height: 180%;
+}
+
+.index_main_right_hot_more {
+	height: 6%;
+	width: 100%;
+	text-align: center;
+}
+
+.index_main_right_hot_more_button {
+	margin-left: 20%;
+	margin: 0 0 0 20%;
+	float: left;
+	width: 60%;
+}
+
+.index_main_right_RealTime {
+	border-top: 1px solid red;
+	float: left;
+	width: 100%;
+	height: 444px;
+	margin-top: 30px;
+	background-color: #C0C0C0;
+}
+
+.index_main_right_LookForPeople {
+	border-top: 1px solid red;
+	float: left;
+	width: 100%;
+	height: 700px;
+	margin-top: 30px;
+	background-color: #C0C0C0;
+}
+
+.index_main_right_LookForPeople_title {
+	width: 80%;
+	margin: 5% 10% 0 10%;
+	height: 5%;
+	font-weight: 900;
+	font-size: 1.05em;
+}
+
+.index_main_right_LookForPeople_area {
+	float: left;
+	margin: 4% 10% 0 10%;
+	width: 80%;
+	height: auto;
+	border-bottom: 1px solid #C0C4CC;
+}
+
+.index_main_right_LookForPeople_people {
+	font-weight: 100;
+	width: 100%;
+	height: 3%;
+	font-size: 1.05em;
+}
+
+.index_main_right_LookForPeople_class {
+	width: 100%;
+	height: auto;
+}
+
+.index_main_right_LookForPeople_class_content {
+	float: left;
+	margin: 4% 0 0 3%;
+	width: 30%;
+	height: auto;
+}
+
+.index_main_right_LookForPeople_class_content a {
+	vertical-align: 30%;
+	font-size: .75em;
+	text-decoration: none;
+}
+
+#index_foot {
+	bottom: 0;
+	width: 100%;
+	height: 50px;
+	float: left;
+	background-color: yellowgreen;
+	position: fixed;
+	z-index: 9999;
+}
