@@ -7,7 +7,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import com.example.demo.user.entity.User;
 import com.example.demo.user.service.UserService;
 
 @Controller
@@ -19,9 +18,7 @@ public class UserController {
 	
 	@RequestMapping(value="/find",method = RequestMethod.GET)
 	public String findbyid(HttpServletRequest request) {
-		User user = userService.findById(1);
-		request.setAttribute("user",user);
-		System.out.println(user);
+		
 		return "web/hello";
 	}
 }
