@@ -17,7 +17,7 @@ public class UserController {
 	
 	
 	@RequestMapping(value="/find",method = RequestMethod.GET)
-	public String findbyid(HttpServletRequest request) {
+	public String findbyid() {
 		
 		return "web/hello";
 	}
