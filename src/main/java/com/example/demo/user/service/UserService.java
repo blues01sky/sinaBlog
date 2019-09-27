@@ -7,8 +7,6 @@ import com.example.demo.user.entity.User;
 @Service
 public interface UserService {
 	User findById(Integer id);
-<<<<<<< HEAD
-=======
 	
 	Integer addUser(String name,String password);
 	
@@ -18,5 +16,4 @@ public interface UserService {
 	
 	Integer updateUser(String newname,String password,String name);
 	
->>>>>>> branch 'master' of https://github.com/blues01sky/sinaBlog.git
 }

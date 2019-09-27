@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+<!--		<link rel="stylesheet" th:href="@{/css/index.css}" />
+		<link rel="stylesheet" th:href="@{/css/textDetial.css}" />
+		<script th:src="@{/js/index.js}"></script>
+		<script type="text/javascript" th:src="@{/jquery/jquery-3.4.1.min.js}"></script>-->
+		<link rel="stylesheet" href="../../static/css/index.css" />
+		<link rel="stylesheet" href="../../static/css/textDetial.css" />
+		<script type="text/javascript" src="../../static/js/index.js" ></script>
+		<script type="text/javascript" src="../../static/jquery/jquery-3.4.1.min.js" ></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				var kuandu = window.outerWidth;
+				var j = kuandu * 0.5 - 470;
+				var k = kuandu * 0.5 - 470 + 640;
+				$("#text_main_right").css("margin-left", function() { return parseFloat(k); });
+				$("#text_main_neirong").css("margin-left", function() { return parseFloat(j); });
+				$(".otheruser_remark_top_operate").mouseenter(function() {
+					$(".otheruser_remark_top_operate_biaoqian").css("display", "block");
+				});
+				$(".otheruser_remark_top_operate").mouseleave(function() {
+					$(".otheruser_remark_top_operate_biaoqian").css("display", "none");
+				});
+			});
+
+			function index_top_search() {
+				$("#index_top_search_input").css("border", "1px solid orange")
+			}
+
+			function denglu() {
+				$(".index_top_regist_cover").css("display", "block")
+				$(".user_login").css("display", "block")
+				$(".user_login_form_UserAndPassword").css("display", "block")
+			}
+
+			function Userdenglu() {
+				$(".index_top_regist_cover").css("display", "block")
+				$(".user_login").css("display", "block")
+				$(".user_login_form_UserAndPassword").css("display", "block")
+				$(".user_login_select_right").css("border-bottom", "none")
+				$(".user_login_form_ScanCode").css("display", "none")
+				$(".user_login_select_left").css("border-bottom", "2px solid burlywood")
+			}
+
+			function scanLogin() {
+				$(".index_top_regist_cover").css("display", "block")
+				$(".user_login").css("display", "block")
+				$(".user_login_form_UserAndPassword").css("display", "none")
+				$(".user_login_select_right").css("border-bottom", "2px solid burlywood")
+				$(".user_login_form_ScanCode").css("display", "block")
+				$(".user_login_select_left").css("border-bottom", "none")
+			}
+
+			function closeLogin() {
+				$(".index_top_regist_cover").css("display", "none")
+				$(".user_login").css("display", "none")
+				$(".user_login_form_UserAndPassword").css("display", "none")
+			}
+
+			function changeWindows() {
+				var kuandu = window.outerWidth;
+				var j = kuandu * 0.5 - 490;
+				var k = kuandu * 0.5 - 490 + 640;
+				if(kuandu < 940) {
+					$("#text_main_right").css("display", "none")
+					$("#text_main_neirong").css("margin-left", function() { return parseFloat(j); })
+					$("#text_main_left").css({ "margin-left": "50%", "transform": "translateX(-50%)" })
+				} else {
+					$("#text_main_neirong").css("margin-left", function() { return parseFloat(j); })
+					$("#text_main_right").css("display", "block")
+					$("#text_main_right").css("margin-left", function() { return parseFloat(k); })
+					$("#text_main_left").css({ "margin-left": "0", "transform": "none" })
+				}
+			}
+
+			function big(kuai, num) {
+				var pictureWidths = document.getElementsByClassName("text_main_content_picture")[0].getElementsByTagName('img')[num - 1].offsetWidth;
+				if(pictureWidths <= 130) {
+					$('#' + kuai + num).css({ "width": "550px", "height": "auto", "cursor": "zoom-out" })
+					$(".text_main_content_picture_operate").css("display", "block")
+				} else {
+					$('#' + kuai + num).css({ "width": "130px", "height": "auto", "cursor": "zoom-in" })
+					$(".text_main_content_picture_operate").css("display", "none")
+				}
+			}
+
+			function zuoxuan() {
+
+			}
+		</script>
+	</head>
+
+	<body onresize="changeWindows()">
+		<div id="index_top">
+			<div class="index_top_blank"></div>
+			<div class="index_top_logo" onclick="window.location.href='index.html'"></div>
+			<div class="index_top_search">
+				<input id="index_top_search_input" placeholder="搜索" onblur="index_top_search();" />
+				<img src="../../resource/img/admin/search_logo.png" />
+			</div>
+			<div class="index_top_BigBlank"></div>
+			<div class="index_top_navigation">
+				<div class="index_top_navigation_button">
+					<img src="../../resource/img/admin/chat.png" />
+					<a href="" onclick="">按钮</a>
+				</div>
+				<div class="index_top_navigation_button">
+					<img src="../../resource/img/admin/chat.png" />
+					<a href="" onclick="">按钮</a>
+				</div>
+				<div class="index_top_navigation_button">
+					<img src="../../resource/img/admin/chat.png" />
+					<a href="" onclick="">按钮</a>
+				</div>
+				<div class="index_top_navigation_button">
+					<img src="../../resource/img/admin/chat.png" />
+					<a href="" onclick="">按钮</a>
+				</div>
+				<div class="index_top_navigation_button">
+					<img src="../../resource/img/admin/chat.png" />
+					<a href="" onclick="">按钮</a>
+				</div>
+				<div class="index_top_navigation_button">
+					<img src="../../resource/img/admin/chat.png" />
+					<a href="" onclick="">按钮</a>
+				</div>
+
+			</div>
+			<div class="index_top_user">
+				<div class="index_top_user_regist">
+					<a href="regist.html">注册</a>
+				</div>
+				<div class="index_top_user_login">
+					<a href="javascript::void(0)" onclick="denglu()">登录</a>
+					<div class="index_top_regist_cover"></div>
+					<div class="user_login">
+						<div class="user_login_exit">
+							<div class="user_login_exit_button" onclick="closeLogin()"></div>
+						</div>
+						<div class="user_login_select">
+							<div class="user_login_select_black"></div>
+							<div class="user_login_select_left">
+								<a href="javascript::void(0)" onclick="Userdenglu()">账号登录</a>
+							</div>
+							<div class="user_login_select_right">
+								<a href="javascript::void(0)" onclick="scanLogin()">扫码登录</a>
+							</div>
+						</div>
+
+						<div class="user_login_form">
+							<div class="user_login_form_UserAndPassword">
+								<div class="user_login_form_UserAndPassword_black"></div>
+								<form class="user_login_form_UserAndPassword_form" action="">
+									<div class="user_login_form_UserAndPassword_form_input">
+										<input id="" placeholder="用户名" />
+									</div>
+									<div class="user_login_form_UserAndPassword_form_input">
+										<input id="" placeholder="密码" />
+									</div>
+									<div class="user_login_form_UserAndPassword_form_input_forget">
+										<div class="user_login_form_UserAndPassword_form_input_forget_left">
+											<input type="checkbox" /><span>记住密码</span>
+										</div>
+										<div class="user_login_form_UserAndPassword_form_input_forget_right">
+											<a href="#"><span>忘记密码</span></a>
+										</div>
+									</div>
+									<div class="user_login_form_UserAndPassword_form_input_submit">
+										<input type="submit" name="" id="" value="登录" />
+									</div>
+								</form>
+								<div class="user_login_form_UserAndPassword_QQlogin">
+									<input type="button" value="as" />
+								</div>
+								<div class="user_login_form_regist">
+									<div class="user_login_form_regist_left">
+										<a href="#">立即注册</a>
+									</div>
+									<div class="user_login_form_regist_right">
+										<a href="#">短信登录</a>
+									</div>
+								</div>
+							</div>
+							<div class="user_login_form_ScanCode">
+								<div class="user_login_form_ScanCode_code">
+									<img src="../../resource/img/erweima.png" />
+								</div>
+								<div class="user_login_form_ScanCode_text">
+									<span>请使用最新版客户端扫描</span>
+								</div>
+								<div class="user_login_form_ScanCode_notice">
+									<div class="user_login_form_regist_left">
+										<a href="#">立即注册</a>
+									</div>
+									<div class="user_login_form_regist_right">
+										<a href="#">短信登录</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<div class="index_top_blank"></div>
+		</div>
+
+		<div id="text_main">
+			<div id="text_main_right">
+				<div class="text_main_right_about">
+					<div class="text_main_right_about_content">
+						<div class="text_main_right_about_content_left">
+							<a href="#">相关推荐</a>
+						</div>
+						<div class="text_main_right_about_content_right">
+							<a href="#">€刷新</a>
+						</div>
+						<div class="text_main_right_about_content_underline"></div>
+					</div>
+				</div>
+				<div class="text_main_right_content">
+					<div class="text_main_right_content_userMessage">
+						<div class="text_main_right_content_userMessage_portrait">
+							<img src="../../resource/img/erweima.png" />
+						</div>
+						<div class="text_main_right_content_userMessage_name">
+							<a href="#">网名</a>
+						</div>
+						<div class="text_main_right_content_userMessage_time">
+							<a href="#">9月11日&nbsp;&nbsp;&nbsp;9.11</a>
+						</div>
+					</div>
+					<div class="text_main_right_content_userMessage_focus">
+						<a href="#"><span>+</span>关注</a>
+					</div>
+					<div class="text_main_right_content_detial">
+						<div class="text_main_right_content_detial_title">
+							<a href="#">家华师大家华师大家华师大家华大家华师大家华师大家华师大家华师大</a>
+						</div>
+						<div class="text_main_right_content_detial_matter">
+							<span>飞规划局飞规划局飞规划局飞规划局飞规划局飞规划局飞规划局飞规划局飞规划局飞规划局飞规划局飞规划局飞规划局飞规划局<a href="#">#热点是件#</a></span>
+						</div>
+						<div class="text_main_right_content_detial_matter_video">
+							<video controls="controls" loop="loop" muted="muted">
+								<source src="../../resource/video/拥抱星星的月亮_13_Trim_Trim.mp4" type="video/mp4"></source>
+							</video>
+						</div>
+						<div class="text_main_right_content_detial_remark">
+							<div class="text_main_right_content_detial_remark_option_last">
+								<img src="../../resource/img/admin/music.png" />
+								<a href="#">129</a>
+							</div>
+							<div class="text_main_right_content_detial_remark_option">
+								<img src="../../resource/img/admin/music.png" />
+								<a href="#">189</a>
+							</div>
+							<div class="text_main_right_content_detial_remark_option">
+								<img src="../../resource/img/admin/music.png" />
+								<a href="#">19</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="text_main_right_content">
+					<div class="text_main_right_content_userMessage">
+						<div class="text_main_right_content_userMessage_portrait">
+							<img src="../../resource/img/erweima.png" />
+						</div>
+						<div class="text_main_right_content_userMessage_name">
+							<a href="#">网名</a>
+						</div>
+						<div class="text_main_right_content_userMessage_time">
+							<a href="#">9月11日&nbsp;&nbsp;&nbsp;9.11</a>
+						</div>
+					</div>
+					<div class="text_main_right_content_userMessage_focus">
+						<a href="#"><span>+</span>关注</a>
+					</div>
+					<div class="text_main_right_content_detial">
+						<div class="text_main_right_content_detial_title">
+							<a href="#">家华师大家华师大家华师大家华大家华师大家华师大家华师大家华师大</a>
+						</div>
+						<div class="text_main_right_content_detial_matter">
+							<span>飞规划局飞规划局飞规划局飞规划局飞规划局飞规划局飞规划局飞规划局飞规划局飞规划局飞规划局飞规划局飞规划局飞规划局<a href="#">#热点是件#</a></span>
+						</div>
+						<div class="text_main_right_content_detial_matter_picture">
+							<img src="../../resource/img/全屏.png" />
+						</div>
+						<div class="text_main_right_content_detial_remark">
+							<div class="text_main_right_content_detial_remark_option_last">
+								<img src="../../resource/img/admin/music.png" />
+								<a href="#">129</a>
+							</div>
+							<div class="text_main_right_content_detial_remark_option">
+								<img src="../../resource/img/admin/music.png" />
+								<a href="#">189</a>
+							</div>
+							<div class="text_main_right_content_detial_remark_option">
+								<img src="../../resource/img/admin/music.png" />
+								<a href="#">19</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="text_main_neirong">
+				<div id="text_main_left">
+					<div class="text_main_content">
+						<div class="text_main_content_headPicture">
+							<img src="../../resource/img/全屏.png" />
+						</div>
+						<div class="text_main_content_personalMessage">
+							<div class="text_main_content_personalMessage_report">
+								<select>
+									<option selected="selected">有问题</option>
+									<option>
+										<a href="#" onclick="">1</a>
+									</option>
+									<option>
+										<a href="#" onclick="">2</a>
+									</option>
+									<option>
+										<a href="#" onclick="">3</a>
+									</option>
+								</select>
+							</div>
+							<div class="text_main_content_personalMessage_focus">
+								<a href="#" onclick=""><span style="font-weight900;font-size: 1.5em;color: orangered;">+</span>关注</a>
+							</div>
+
+							<div class="text_main_content_personalMessage_name">
+								<a href="" onclick="">王五</a>
+							</div>
+							<div class="text_main_content_personalMessage_date">
+								<a href="" onclick="">8月29日&nbsp;&nbsp;15:42&nbsp;&nbsp;来自&nbsp;&nbsp;Apple</a>
+							</div>
+						</div>
+
+					</div>
+					<div class="text_main_content_title"><span>【标题标题标题标题<a href="">个儿大</a>】</span></div>
+					<div class="text_main_content_neirong">
+						<span><a href="">#有东西#</a>可以说手动阀士大夫投入和认同鬼地方个说手动阀士大夫投入和认同鬼地方个说手动阀士大夫投入和认同鬼地方个说手动阀士大夫投入和认同鬼地方个说手动阀士大夫投入和认同鬼地方个说手动阀士大夫投入和认同鬼地方个说手动阀士大夫投入和认同鬼地方个说手动阀士大夫投入和认同鬼地方个说手动阀士大夫投入和认同鬼地方个说手动阀士大夫投入和认同鬼地方个</span>
+						<div class="photoAndOperate">
+							<div class="text_main_content_picture_operate">
+								<button onclick="big()">收起</button>
+								<button onclick="">查看原图</button>
+								<button onclick="zuoxuan()">左旋</button>
+								<button onclick="youxuan()">右旋</button>
+							</div>
+							<div class="text_main_content_picture">
+								<img id="text_main_content_picture1" onclick="big('text_main_content_picture','1')" src="../../resource/img/全屏.png" />
+								<img id="text_main_content_picture2" onclick="big('text_main_content_picture','2')" src="../../resource/img/全屏.png" />
+								<img id="text_main_content_picture3" onclick="big('text_main_content_picture','3')" src="../../resource/img/全屏.png" />
+								<img id="text_main_content_picture4" onclick="big('text_main_content_picture','4')" src="../../resource/img/全屏.png" />
+								<img id="text_main_content_picture5" onclick="big('text_main_content_picture','5')" src="../../resource/img/全屏.png" />
+								<img id="text_main_content_picture6" onclick="big('text_main_content_picture','6')" src="../../resource/img/全屏.png" />
+								<img id="text_main_content_picture7" onclick="big('text_main_content_picture','7')" src="../../resource/img/全屏.png" />
+								<img id="text_main_content_picture8" onclick="big('text_main_content_picture','8')" src="../../resource/img/全屏.png" />
+								<img id="text_main_content_picture9" onclick="big('text_main_content_picture','9')" src="../../resource/img/全屏.png" />
+								<img id="text_main_content_picture10" onclick="big('text_main_content_picture','10')" src="../../resource/img/全屏.png" />
+								<img id="text_main_content_picture11" onclick="big('text_main_content_picture','11')" src="../../resource/img/全屏.png" />
+								<img id="text_main_content_picture12" onclick="big('text_main_content_picture','12')" src="../../resource/img/全屏.png" />
+							</div>
+
+						</div>
+					</div>
+					<div class="text_main_content_neirong_remark">
+						<div class="text_main_content_neirong_remark_operate">
+							<img src="../../resource/img/admin/chat.png" />
+							<a>收藏</a>
+						</div>
+						<div class="text_main_content_neirong_remark_operate">
+							<img src="../../resource/img/admin/chat.png" />
+							<a>收藏</a>
+						</div>
+						<div class="text_main_content_neirong_remark_operate">
+							<img src="../../resource/img/admin/chat.png" />
+							<a>收藏</a>
+						</div>
+						<div class="text_main_content_neirong_remark_operate_last">
+							<img src="../../resource/img/admin/chat.png" />
+							<a>收藏</a>
+						</div>
+					</div>
+
+					<div class="user_remark">
+						<div class="user_remark_author">
+							<div class="user_remark_author_top">
+								<div class="user_remark_author_top_headPortrait">
+									<img src="../../resource/img/erweima.png" />
+								</div>
+								<div class="user_remark_author_top_input">
+									<input placeholder="评论" />
+								</div>
+							</div>
+							<div class="user_remark_author_bottom">
+								<div class="user_remark_author_bottom_expression">
+									<img src="../../resource/img/erweima.png" title="表情" />
+								</div>
+								<div class="user_remark_author_bottom_expression">
+									<img src="../../resource/img/admin/index.png" title="趣图" />
+								</div>
+								<div class="user_remark_author_bottom_expression">
+									<img src="../../resource/img/erweima.png" title="图片" />
+								</div>
+								<input type="checkbox" /><span>转发到我的微博</span>
+								<button onclick="javascript::void(0);">评论</button>
+							</div>
+						</div>
+						<div class="otheruser_remark">
+							<div class="otheruser_remark_top">
+								<div class="otheruser_remark_top_blank"></div>
+								<div class="otheruser_remark_top_headPortrait">
+									<img src="../../resource/img/全屏.png" />
+								</div>
+								<div class="otheruser_remark_top_user">
+									<a href="javascript::void(0);">user</a>
+									<img src="../../resource/img/admin/index.png" />
+									<span>:电饭锅东方红电饭锅东方红电饭锅东方红</span>
+								</div>
+								<div class="otheruser_remark_top_operate">
+									<span>时间&nbsp;&nbsp;9.52</span>
+									<div class="otheruser_remark_top_operate_last">
+										<img src="../../resource/img/admin/video.png" /><span>1234567890</span>
+									</div>
+									<div class="otheruser_remark_top_operate_huifu">回复</div>
+									<div class="otheruser_remark_top_operate_biaoqian">投诉</div>
+									<div class="otheruser_remark_top_operate_biaoqian">屏蔽</div>
+								</div>
+								<div class="otheruser_remark_top_underline"></div>
+							</div>
+						</div>
+						<div class="otheruser_remark">
+							<div class="otheruser_remark_top">
+								<div class="otheruser_remark_top_blank"></div>
+								<div class="otheruser_remark_top_headPortrait">
+									<img src="../../resource/img/全屏.png" />
+								</div>
+								<div class="otheruser_remark_top_user">
+									<a href="javascript::void(0);">user</a>
+									<img src="../../resource/img/admin/index.png" />
+									<span>:电饭锅东方红电饭锅东方红电饭锅东方红</span>
+								</div>
+								<div class="otheruser_remark_top_operate">
+									<span>时间&nbsp;&nbsp;9.52</span>
+									<div class="otheruser_remark_top_operate_last">
+										<img src="../../resource/img/admin/video.png" />45
+									</div>
+									<div class="otheruser_remark_top_operate_huifu">回复</div>
+									<div class="otheruser_remark_top_operate_biaoqian">投诉</div>
+									<div class="otheruser_remark_top_operate_biaoqian">屏蔽</div>
+								</div>
+							</div>
+							<div class="otheruser_remark_bottom">
+								<div class="otheruser_remark_top_user">
+									<a href="javascript::void(0);">user</a>
+									<img src="../../resource/img/admin/index.png" />
+									<span>:电饭锅东方红电饭锅东方红电饭锅红123</span>
+
+								</div>
+								<div class="otheruser_remark_top_user_pic">
+									<input type="image" src="../../resource/img/全屏.png" />
+								</div>
+								<div class="otheruser_remark_top_operate">
+									<span>时间&nbsp;&nbsp;9.52</span>
+									<div class="otheruser_remark_top_operate_last">
+										<img src="../../resource/img/admin/video.png" /><span>123</span>
+									</div>
+									<div class="otheruser_remark_top_operate_huifu">回复</div>
+									<div class="otheruser_remark_top_operate_biaoqian">查看对话</div>
+									<div class="otheruser_remark_top_operate_biaoqian">投诉</div>
+									<div class="otheruser_remark_top_operate_biaoqian">屏蔽</div>
+								</div>
+								<div class="otheruser_remark_top_underline"></div>
+								<div class="otheruser_remark_bottom_sumremark">
+									<span>会而非的这等<a>共987654123</a>回复</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="user_remark_more">
+						<a href="javascript::void(0);">查看更多↓</a>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</body>
+
+</html>

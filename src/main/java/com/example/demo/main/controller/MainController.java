@@ -1,18 +1,5 @@
 package com.example.demo.main.controller;
 
-<<<<<<< HEAD
-import javax.servlet.http.HttpServletRequest;
-
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-
-@Controller
-public class MainController {
-	
-	@RequestMapping(value = "index",method = RequestMethod.GET)
-    public String hello(HttpServletRequest request){
-=======
 import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
@@ -36,7 +23,6 @@ public class MainController {
 		List<IndexNavication> navications= indexNavicationRepository.findAll();
 		System.out.println(navications);
 		request.setAttribute("navications", navications);
->>>>>>> branch 'master' of https://github.com/blues01sky/sinaBlog.git
         return "/web/index";
     }
 }

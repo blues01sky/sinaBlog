@@ -1,38 +1,43 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
+
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
-		<link rel="stylesheet" th:href="@{/css/index.css}" />
+		<!--<link rel="stylesheet" th:href="@{/css/index.css}" />
 		<script th:src="@{/js/index.js}"></script>
-<<<<<<< HEAD
-		<script type="text/javascript" th:src="@{/../resource/jquery/jquery-3.4.1.min.js}"></script>
+		<script type="text/javascript" th:src="@{/jquery/jquery-3.4.1.min.js}"></script>-->
+		<link rel="stylesheet" href="../static/css/index.css" />
+		<script type="text/javascript" src="../static/js/index.js" ></script>
+		<script type="text/javascript" src="../static/jquery/jquery-3.4.1.min.js" ></script>
 		<script>
 			function index_top_search() {
 				$("#index_top_search_input").css("border", "1px solid orange")
 			}
-			function messagelogin(){
+
+			function messagelogin() {
 				$(".user_login").css("display", "block")
 				$(".user_login_messagelogin").css("display", "block")
 				$(".user_login_messagelogin_form_UserAndPassword").css("display", "block")
 				$(".user_login_form_UserAndPassword").css("display", "none")
-				$(".user_login_select_left").css("border-bottom","none")
-				$(".user_login_select_right").css("border-bottom","none")
+				$(".user_login_select_left").css("border-bottom", "none")
+				$(".user_login_select_right").css("border-bottom", "none")
 				$(".user_login_form_ScanCode").css("display", "none")
-				$(".user_login_select_left").css("border-bottom","none")
+				$(".user_login_select_left").css("border-bottom", "none")
 			}
+
 			function tanerweima() {
-				$(".index_main_right_LoginAndRegist_select_right").css("border-bottom","2px solid burlywood")
-				$(".index_main_right_LoginAndRegist_select_left").css("border-bottom","2px solid white")
-				
+				$(".index_main_right_LoginAndRegist_select_right").css("border-bottom", "2px solid burlywood")
+				$(".index_main_right_LoginAndRegist_select_left").css("border-bottom", "2px solid white")
+
 				$(".index_main_right_LoginAndRegist_form").css("display", "none")
 				$(".index_main_right_LoginAndRegist_erweima").css("display", "block")
 			}
 
 			function tandenglukuang() {
-				
-				$(".index_main_right_LoginAndRegist_select_right").css("border-bottom","2px solid white")
-				$(".index_main_right_LoginAndRegist_select_left").css("border-bottom","2px solid burlywood")
+
+				$(".index_main_right_LoginAndRegist_select_right").css("border-bottom", "2px solid white")
+				$(".index_main_right_LoginAndRegist_select_left").css("border-bottom", "2px solid burlywood")
 				$(".index_main_right_LoginAndRegist_form").css("display", "block")
 				$(".index_main_right_LoginAndRegist_erweima").css("display", "none")
 			}
@@ -42,499 +47,37 @@
 				$(".user_login").css("display", "block")
 				$(".user_login_form_UserAndPassword").css("display", "block")
 			}
+
 			function Userdenglu() {
 				$(".index_top_regist_cover").css("display", "block")
 				$(".user_login").css("display", "block")
 				$(".user_login_form_UserAndPassword").css("display", "block")
-				$(".user_login_select_right").css("border-bottom","none")
+				$(".user_login_select_right").css("border-bottom", "none")
 				$(".user_login_form_ScanCode").css("display", "none")
-				$(".user_login_select_left").css("border-bottom","2px solid burlywood")
+				$(".user_login_select_left").css("border-bottom", "2px solid burlywood")
 				$(".user_login_messagelogin").css("display", "none")
 			}
-			function scanLogin(){
+
+			function scanLogin() {
 				$(".index_top_regist_cover").css("display", "block")
 				$(".user_login").css("display", "block")
 				$(".user_login_form_UserAndPassword").css("display", "none")
-				$(".user_login_select_right").css("border-bottom","2px solid burlywood")
+				$(".user_login_select_right").css("border-bottom", "2px solid burlywood")
 				$(".user_login_form_ScanCode").css("display", "block")
-				$(".user_login_select_left").css("border-bottom","none")
+				$(".user_login_select_left").css("border-bottom", "none")
 				$(".user_login_messagelogin").css("display", "none")
 			}
-			function closeLogin(){
+
+			function closeLogin() {
 				$(".index_top_regist_cover").css("display", "none")
 				$(".user_login").css("display", "none")
 				$(".user_login_form_UserAndPassword").css("display", "none")
 			}
-			function daoxiangqingye(){
-				setTimeout(function(){window.location.href = 'textDetial.html'
-				},2000);
-			}
-		</script>
-	</head>
 
-	<body>
-
-		<div id="index_top">
-			<div class="index_top_blank" onclick="#"></div>
-			<div class="index_top_logo"></div>
-			<div class="index_top_search">
-				<input id="index_top_search_input" placeholder="搜索" onblur="index_top_search();" />
-				<img th:src="@{/../resource/img/admin/search_logo.png}" />
-			</div>
-			<div class="index_top_BigBlank"></div>
-			<div class="index_top_navigation">
-				<div class="index_top_navigation_button">
-					<img th:src="@{/../resource/img/admin/chat.png}" />
-					<a th:href="@{#}" onclick="">按钮</a>
-				</div>
-				<div class="index_top_navigation_button">
-					<img th:src="@{/../resource/img/admin/chat.png}" />
-					<a th:href="@{#}" onclick="">按钮</a>
-				</div>
-				<div class="index_top_navigation_button">
-					<img th:src="@{/../resource/img/admin/chat.png}" />
-					<a th:href="@{#}" onclick="">按钮</a>
-				</div>
-				<div class="index_top_navigation_button">
-					<img th:src="@{/../resource/img/admin/chat.png}" />
-					<a th:href="@{#}" onclick="">按钮</a>
-				</div>
-				<div class="index_top_navigation_button">
-					<img th:src="@{/../resource/img/admin/chat.png}" />
-					<a th:href="@{#}" onclick="">按钮</a>
-				</div>
-				<div class="index_top_navigation_button">
-					<img th:src="@{/../resource/img/admin/chat.png}" />
-					<a th:href="@{#}" onclick="">按钮</a>
-				</div>
-
-			</div>
-			<div class="index_top_user">
-				<div class="index_top_user_regist">
-					<a href="regist.html">注册</a>
-				</div>
-				<div class="index_top_user_login">
-					<a href="javascript::void(0)" onclick="denglu()">登录</a>
-					<div class="index_top_regist_cover"></div>
-					<div class="user_login">
-						<div class="user_login_exit">
-							<div class="user_login_exit_button" onclick="closeLogin()"></div>
-						</div>
-						<div class="user_login_select">
-							<div class="user_login_select_black"></div>
-							<div class="user_login_select_left">
-								<a href="javascript::void(0)" onclick="Userdenglu()">账号登录</a>
-							</div>
-							<div class="user_login_select_right">
-								<a href="javascript::void(0)" onclick="scanLogin()">扫码登录</a>
-							</div>
-						</div>
-						
-						
-						<div class="user_login_messagelogin">
-							<div class="user_login_messagelogin_form_UserAndPassword">
-								<div class="user_login_messagelogin_form_UserAndPassword_black"></div>
-									<form class="user_login_messagelogin_form_UserAndPassword_form" action="">
-										<div class="user_login_messagelogin_form_UserAndPassword_form_phone">
-											<input placeholder="请输入手机号"  />
-										</div>
-										<div class="user_login_messagelogin_form_UserAndPassword_form_verificationCode">
-											<button onclick="javascript::void(0)" value="获取短信验证码">获取短信验证码</button>
-											<input type="text" />
-										</div>
-										<div class="user_login_messagelogin_form_UserAndPassword_form_input_forget">
-											<div class="user_login_messagelogin_form_UserAndPassword_form_input_forget_left">
-												<input type="checkbox" /><span>下次自动登录</span>
-											</div>
-											
-										</div>
-										<div class="user_login_messagelogin_form_UserAndPassword_form_input_submit">
-											<input type="submit" name="" id="" value="登录" />
-										</div>
-									</form>
-									
-								<div class="user_login_messagelogin_form_UserAndPassword_QQlogin">
-									<input type="button" value="as"/>
-								</div>
-								<!--<div class="user_login_messagelogin_form_regist">
-									<div class="user_login_form_regist_left">
-										<a th:href="@{#}">立即注册</a>
-									</div>
-									<div class="user_login_messagelogin_form_regist_right">
-										<a th:href="@{#}" onclick="messagelogin()">短信登录</a>
-									</div>
-								</div>-->
-							</div>
-						</div>
-						
-						
-						
-						<div class="user_login_form">
-							<div class="user_login_form_UserAndPassword">
-								<div class="user_login_form_UserAndPassword_black"></div>
-									<form class="user_login_form_UserAndPassword_form" action="">
-										<div class="user_login_form_UserAndPassword_form_input">
-											<input id="" placeholder="用户名" />
-										</div>
-										<div class="user_login_form_UserAndPassword_form_input">
-											<input id="" placeholder="密码" />
-										</div>
-										<div class="user_login_form_UserAndPassword_form_input_forget">
-											<div class="user_login_form_UserAndPassword_form_input_forget_left">
-												<input type="checkbox" /><span>记住密码</span>
-											</div>
-											<div class="user_login_form_UserAndPassword_form_input_forget_right">
-												<a th:href="@{#}"><span>忘记密码</span></a>
-											</div>
-										</div>
-										<div class="user_login_form_UserAndPassword_form_input_submit">
-											<input type="submit" name="" id="" value="登录" />
-										</div>
-									</form>
-									
-								<div class="user_login_form_UserAndPassword_QQlogin">
-									<input type="button" value="as"/>
-								</div>
-								<div class="user_login_form_regist">
-									<div class="user_login_form_regist_left">
-										<a th:href="@{#}">立即注册</a>
-									</div>
-									<div class="user_login_form_regist_right">
-										<a th:href="@{#}" onclick="messagelogin()">短信登录</a>
-									</div>
-								</div>
-							</div>
-							<div class="user_login_form_ScanCode">
-								<div class="user_login_form_ScanCode_code">
-									<img th:src="@{/../resource/img/erweima.png}" />
-								</div>
-								<div class="user_login_form_ScanCode_text">
-									<span>请使用最新版客户端扫描</span>
-								</div>
-								<div class="user_login_form_ScanCode_notice">
-									<div class="user_login_form_regist_left">
-										<a th:href="@{#}">立即注册</a>
-									</div>
-									<div class="user_login_form_regist_right">
-										<a th:href="@{#}" onclick="messagelogin()">短信登录</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						
-						<div class="index_top_user_messageLogin">
-							
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="index_top_blank"></div>
-		</div>
-
-		<div id="index_main">
-			<div class="index_main_blank"></div>
-			<div class="index_main_navigation">
-				<div class="index_main_navigation_button_select">热点</div>
-				<div class="index_main_navigation_button">热点</div>
-				<div class="index_main_navigation_button">热点</div>
-				<div class="index_main_navigation_button">热点</div>
-				<div class="index_main_navigation_button">热点</div>
-			</div>
-			<div class="index_main_content">
-				<div class="index_main_content_shuffling">
-					<img th:src="@{/../resource/img/全屏.png}" />
-					<div class="index_main_content_shuffling_dot" style="left: 35%;"></div>
-					<div class="index_main_content_shuffling_dot" style="left: 40%;"></div>
-					<div class="index_main_content_shuffling_dot" style="left: 45%;"></div>
-					<div class="index_main_content_shuffling_dot" style="left: 50%;"></div>
-					<div class="index_main_content_shuffling_dot" style="left: 55%;"></div>
-					<div class="index_main_content_shuffling_dot" style="left: 60%;"></div>
-					<div class="index_main_content_shuffling_dot" style="left: 65%;"></div>
-				</div>
-				<div class="index_main_content_video">
-					<div class="index_main_content_video_left">
-						<video muted="muted" controls="controls" loop="loop">
-							<source th:src="@{/../resource/video/拥抱星星的月亮_13_Trim_Trim.mp4}" type="video/mp4">
-							</source>
-						</video>
-					</div>
-					<div class="index_main_content_video_right">
-						<div class="index_main_content_video_right_topic">
-							<a style="color: red;" href="">#如法国奢#</a>
-						</div>
-						<div class="index_main_content_video_right_content">
-							<span>萨德经费萨德经费萨德经费萨德经费萨德经费萨德德经费萨德经费萨德经费萨德经费萨德经费萨德经费萨德经费
-							<a style="color: red;" href="">#如法国奢#</a></span>
-						</div>
-						<div class="index_main_content_video_right_auther">
-							<img th:src="@{/../resource/img/全屏.png}" />
-							<a th:href="@{#}"><span>用户是</span></a><span>&nbsp;&nbsp;&nbsp;&nbsp;8月25日&nbsp;&nbsp;16:17:30</span>
-						</div>
-						<div class="index_main_content_video_right_option">
-							<div class="index_main_content_video_right_remark">
-								<img th:src="@{/../resource/img/admin/password.png}" />
-								<a th:href="@{#}"><span>12345678</span></a>
-							</div>
-							<div class="index_main_content_video_right_remark">
-								<img th:src="@{/../resource/img/admin/password.png}" />
-								<a th:href="@{#}"><span>12345678</span></a>
-							</div>
-							<div class="index_main_content_video_right_remark">
-								<img th:src="@{/../resource/img/admin/password.png}" />
-								<a th:href="@{#}"><span>12345678</span></a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="index_main_content_picture">
-					<div class="index_main_content_picture_title">
-						<a th:href="@{#}"></a>
-						<span>没可怜人</span>
-						<a th:href="@{#}"></a>
-					</div>
-					<div class="index_main_content_picture_photos">
-						<div class="index_main_content_picture_photo_head">
-							<img th:src="@{/../resource/img/全屏.png}" />
-						</div>
-						<div class="index_main_content_picture_photo">
-							<img th:src="@{/../resource/img/全屏.png}" />
-						</div>
-						<div class="index_main_content_picture_photo">
-							<img th:src="@{/../resource/img/全屏.png}" />
-						</div>
-						<div class="index_main_content_picture_photo">
-							<img th:src="@{/../resource/img/全屏.png}" />
-						</div>
-					</div>
-					<div class="index_main_content_picture_remark">
-						<div class="index_main_content_picture_remark_left">
-							<img th:src="@{/../resource/img/全屏.png}" />
-							<a th:href="@{#}"><span>用户是</span></a><span>&nbsp;&nbsp;&nbsp;&nbsp;8月25日&nbsp;&nbsp;16:17:30</span>
-						</div>
-						<div class="index_main_content_picture_remark_right">
-							<div class="index_main_content_picture_remark_right_remark">
-								<img th:src="@{/../resource/img/admin/password.png}" />
-								<a th:href="@{#}"><span>12345678</span></a>
-							</div>
-							<div class="index_main_content_picture_remark_right_remark">
-								<img th:src="@{/../resource/img/admin/password.png}" />
-								<a th:href="@{#}"><span>12345678</span></a>
-							</div>
-							<div class="index_main_content_picture_remark_right_remark">
-								<img th:src="@{/../resource/img/admin/password.png}" />
-								<a th:href="@{#}"><span>12345678</span></a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="index_main_content_text">
-					<div class="index_main_content_text_picture">
-						<img th:src="@{/../resource/img/全屏.png}" />
-					</div>
-					<div class="index_main_content_text_text">
-						<a style="color: red;" th:href="@{#}"></a>
-						</span>
-						<span onclick="daoxiangqingye()">阿阿斯斯蒂芬阿蒂芬芬阿斯斯蒂芬阿蒂芬芬阿斯蒂芬</span>
-						<a style="color: red;" th:href="@{#}"></a>
-						</span>
-					</div>
-					<div class="index_main_content_text_RightBottom">
-						<div class="index_main_content_text_RightBottom_left_auther">
-							<img th:src="@{/../resource/img/全屏.png}" />
-							<a th:href="@{#}"><span>用户是</span></a><span>&nbsp;&nbsp;&nbsp;&nbsp;8月25日&nbsp;&nbsp;16:17:30</span>
-						</div>
-						<div class="index_main_content_text_RightBottom_right">
-							<div class="index_main_content_text_RightBottom_right_remark">
-								<img th:src="@{/../resource/img/admin/password.png}" />
-								<a th:href="@{#}"><span>12345678</span></a>
-							</div>
-							<div class="index_main_content_text_RightBottom_right_remark">
-								<img th:src="@{/../resource/img/admin/password.png}" />
-								<a th:href="@{#}"><span>12345678</span></a>
-							</div>
-							<div class="index_main_content_text_RightBottom_right_remark">
-								<img th:src="@{/../resource/img/admin/password.png}" />
-								<a th:href="@{#}"><span>12345678</span></a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="index_main_right">
-				<div class="index_main_right_login">
-					<div class="index_main_right_LoginAndRegist">
-						<div class="index_main_right_LoginAndRegist_select">
-							<div class="index_main_right_LoginAndRegist_select_left">
-								<a href="javascript::void(0);" onclick="tandenglukuang()">
-									<p>账号登录</p>
-								</a>
-							</div>
-							<div class="index_main_right_LoginAndRegist_select_right">
-								<a href="javascript::void(0);" onclick="tanerweima()">
-									<p>扫码登录</p>
-								</a>
-							</div>
-						</div>
-						<div class="index_main_right_LoginAndRegist_erweima">
-							<img th:src="@{/../resource/img/erweima.png}" />
-							<span>使用最新版客户端下载软件</span>
-						</div>
-						<div class="index_main_right_LoginAndRegist_form">
-							<form th:action="@{#}" class="index_main_right_LoginAndRegist_form_body">
-								<input id="user" placeholder="" />
-								<input id="password" placeholder="" />
-								<div class="index_main_right_LoginAndRegist_form_rember">
-									<input type="checkbox" /><span>记住密码</span>
-									<a style="text-align: right;" href="" onclick="">忘记密码</a>
-								</div>
-								<input id="submit" type="submit" style="color:white;outline:none;background-color:orange;border-radius:5px;margin: 0 10% 0 11% ;" value="登录" />
-							</form>
-						</div>
-						<div class="index_main_right_LoginAndRegist_other">
-							<div class="index_main_right_LoginAndRegist_other_left">
-								<span>其他方式：</span>
-							</div>
-							<div class="index_main_right_LoginAndRegist_other_center">
-								<img th:src="@{/../resource/img/admin/index.png}" />
-								<img th:src="@{/../resource/img/admin/index.png}" />
-								<img th:src="@{/../resource/img/admin/index.png}" />
-								<img th:src="@{/../resource/img/admin/index.png}" />
-								<img th:src="@{/../resource/img/admin/index.png}" />
-							</div>
-							<div class="index_main_right_LoginAndRegist_other_right">
-								<span><a th:href="@{#}">立即注册</a></span>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="index_main_right_hot">
-					<div class="index_main_right_hot_title">
-						<span>热门话题：</span>
-					</div>
-					<div class="index_main_right_hot_content">
-						<div class="index_main_right_hot_content_topic">
-							<div class="index_main_right_hot_content_topic_picture"></div>
-							<div class="index_main_right_hot_content_topic_title">
-								<a th:href="@{#}">大大爷澡</a>
-							</div>
-							<div class="index_main_right_hot_content_topic_comment">
-								<span>阅读</span>
-							</div>
-						</div>
-					</div>
-					<div class="index_main_right_hot_more">
-						<div class="index_main_right_hot_more_button">
-							<a th:href="@{#}">查看更多>></a>
-						</div>
-					</div>
-				</div>
-				<div class="index_main_right_RealTime">
-					<div class="index_main_right_hot_title">
-						<span>热门话题：</span>
-					</div>
-					<div class="index_main_right_hot_content">
-						<div class="index_main_right_hot_content_topic">
-							<div class="index_main_right_hot_content_topic_picture"></div>
-							<div class="index_main_right_hot_content_topic_title">
-								<a th:href="@{#}">大大爷澡</a>
-							</div>
-							<div class="index_main_right_hot_content_topic_comment">
-								<span>阅读</span>
-							</div>
-						</div>
-					</div>
-					<div class="index_main_right_hot_more">
-						<div class="index_main_right_hot_more_button">
-							<a th:href="@{#}">查看更多>></a>
-						</div>
-					</div>
-				</div>
-				<div class="index_main_right_LookForPeople">
-					<div class="index_main_right_LookForPeople_title">
-						<span>找人</span>
-					</div>
-					<div class="index_main_right_LookForPeople_area">
-						<div class="index_main_right_LookForPeople_people">
-							<span>名人</span>
-						</div>
-						<div class="index_main_right_LookForPeople_class">
-							<div class="index_main_right_LookForPeople_class_content">
-								<img th:src="@{/../resource/img/admin/music.png}" />
-								<a th:href="@{#}">大师</a>
-							</div>
-							<div class="index_main_right_LookForPeople_class_content">
-								<img th:src="@{/../resource/img/admin/music.png}" />
-								<a th:href="@{#}">大师</a>
-							</div>
-							<div class="index_main_right_LookForPeople_class_content">
-								<img th:src="@{/../resource/img/admin/music.png}" />
-								<a th:href="@{#}">大师</a>
-							</div>
-							<div class="index_main_right_LookForPeople_class_content">
-								<img th:src="@{/../resource/img/admin/music.png}" />
-=======
-		<script type="text/javascript" th:src="@{/jquery/jquery-3.4.1.min.js}"></script>
-		<script>
-			function index_top_search() {
-				$("#index_top_search_input").css("border", "1px solid orange")
-			}
-			function messagelogin(){
-				$(".user_login").css("display", "block")
-				$(".user_login_messagelogin").css("display", "block")
-				$(".user_login_messagelogin_form_UserAndPassword").css("display", "block")
-				$(".user_login_form_UserAndPassword").css("display", "none")
-				$(".user_login_select_left").css("border-bottom","none")
-				$(".user_login_select_right").css("border-bottom","none")
-				$(".user_login_form_ScanCode").css("display", "none")
-				$(".user_login_select_left").css("border-bottom","none")
-			}
-			function tanerweima() {
-				$(".index_main_right_LoginAndRegist_select_right").css("border-bottom","2px solid burlywood")
-				$(".index_main_right_LoginAndRegist_select_left").css("border-bottom","2px solid white")
-				
-				$(".index_main_right_LoginAndRegist_form").css("display", "none")
-				$(".index_main_right_LoginAndRegist_erweima").css("display", "block")
-			}
-
-			function tandenglukuang() {
-				
-				$(".index_main_right_LoginAndRegist_select_right").css("border-bottom","2px solid white")
-				$(".index_main_right_LoginAndRegist_select_left").css("border-bottom","2px solid burlywood")
-				$(".index_main_right_LoginAndRegist_form").css("display", "block")
-				$(".index_main_right_LoginAndRegist_erweima").css("display", "none")
-			}
-
-			function denglu() {
-				$(".index_top_regist_cover").css("display", "block")
-				$(".user_login").css("display", "block")
-				$(".user_login_form_UserAndPassword").css("display", "block")
-			}
-			function Userdenglu() {
-				$(".index_top_regist_cover").css("display", "block")
-				$(".user_login").css("display", "block")
-				$(".user_login_form_UserAndPassword").css("display", "block")
-				$(".user_login_select_right").css("border-bottom","none")
-				$(".user_login_form_ScanCode").css("display", "none")
-				$(".user_login_select_left").css("border-bottom","2px solid burlywood")
-				$(".user_login_messagelogin").css("display", "none")
-			}
-			function scanLogin(){
-				$(".index_top_regist_cover").css("display", "block")
-				$(".user_login").css("display", "block")
-				$(".user_login_form_UserAndPassword").css("display", "none")
-				$(".user_login_select_right").css("border-bottom","2px solid burlywood")
-				$(".user_login_form_ScanCode").css("display", "block")
-				$(".user_login_select_left").css("border-bottom","none")
-				$(".user_login_messagelogin").css("display", "none")
-			}
-			function closeLogin(){
-				$(".index_top_regist_cover").css("display", "none")
-				$(".user_login").css("display", "none")
-				$(".user_login_form_UserAndPassword").css("display", "none")
-			}
-			function daoxiangqingye(){
-				setTimeout(function(){window.location.href = 'textDetial.html'
-				},2000);
+			function daoxiangqingye() {
+				setTimeout(function() {
+					window.location.href = 'user/regist'
+				}, 2000);
 			}
 		</script>
 	</head>
@@ -577,6 +120,22 @@
 
 			</div>
 			<div class="index_top_user">
+				
+				
+				<div class="index_top_user_messageLogin">
+					<div class="index_top_user_messageLogin_left">
+						<img src="../static/img/erweima.png" />
+						<a href="#">username</a>
+					</div>
+					<div class="index_top_user_messageLogin_right">
+						<img src="../static/img/admin/search_logo.png" />
+						<span>12</span>
+						<img src="../static/img/admin/search_logo.png" />
+						<img src="../static/img/admin/search_logo.png" />
+					</div>
+				
+				</div>
+				<!--
 				<div class="index_top_user_regist">
 					<a href="regist.html">注册</a>
 				</div>
@@ -596,32 +155,31 @@
 								<a href="javascript::void(0)" onclick="scanLogin()">扫码登录</a>
 							</div>
 						</div>
-						
-						
+
 						<div class="user_login_messagelogin">
 							<div class="user_login_messagelogin_form_UserAndPassword">
 								<div class="user_login_messagelogin_form_UserAndPassword_black"></div>
-									<form class="user_login_messagelogin_form_UserAndPassword_form" action="">
-										<div class="user_login_messagelogin_form_UserAndPassword_form_phone">
-											<input placeholder="请输入手机号"  />
+								<form class="user_login_messagelogin_form_UserAndPassword_form" action="">
+									<div class="user_login_messagelogin_form_UserAndPassword_form_phone">
+										<input placeholder="请输入手机号" />
+									</div>
+									<div class="user_login_messagelogin_form_UserAndPassword_form_verificationCode">
+										<button onclick="javascript::void(0)" value="获取短信验证码">获取短信验证码</button>
+										<input type="text" />
+									</div>
+									<div class="user_login_messagelogin_form_UserAndPassword_form_input_forget">
+										<div class="user_login_messagelogin_form_UserAndPassword_form_input_forget_left">
+											<input type="checkbox" /><span>下次自动登录</span>
 										</div>
-										<div class="user_login_messagelogin_form_UserAndPassword_form_verificationCode">
-											<button onclick="javascript::void(0)" value="获取短信验证码">获取短信验证码</button>
-											<input type="text" />
-										</div>
-										<div class="user_login_messagelogin_form_UserAndPassword_form_input_forget">
-											<div class="user_login_messagelogin_form_UserAndPassword_form_input_forget_left">
-												<input type="checkbox" /><span>下次自动登录</span>
-											</div>
-											
-										</div>
-										<div class="user_login_messagelogin_form_UserAndPassword_form_input_submit">
-											<input type="submit" name="" id="" value="登录" />
-										</div>
-									</form>
-									
+
+									</div>
+									<div class="user_login_messagelogin_form_UserAndPassword_form_input_submit">
+										<input type="submit" name="" id="" value="登录" />
+									</div>
+								</form>
+
 								<div class="user_login_messagelogin_form_UserAndPassword_QQlogin">
-									<input type="button" value="as"/>
+									<input type="button" value="as" />
 								</div>
 								<!--<div class="user_login_messagelogin_form_regist">
 									<div class="user_login_form_regist_left">
@@ -631,36 +189,34 @@
 										<a th:href="@{#}" onclick="messagelogin()">短信登录</a>
 									</div>
 								</div>-->
-							</div>
+					<!--		</div>
 						</div>
-						
-						
-						
+
 						<div class="user_login_form">
 							<div class="user_login_form_UserAndPassword">
 								<div class="user_login_form_UserAndPassword_black"></div>
-									<form class="user_login_form_UserAndPassword_form" action="">
-										<div class="user_login_form_UserAndPassword_form_input">
-											<input id="" placeholder="用户名" />
+								<form class="user_login_form_UserAndPassword_form" action="">
+									<div class="user_login_form_UserAndPassword_form_input">
+										<input id="" placeholder="用户名" />
+									</div>
+									<div class="user_login_form_UserAndPassword_form_input">
+										<input id="" placeholder="密码" />
+									</div>
+									<div class="user_login_form_UserAndPassword_form_input_forget">
+										<div class="user_login_form_UserAndPassword_form_input_forget_left">
+											<input type="checkbox" /><span>记住密码</span>
 										</div>
-										<div class="user_login_form_UserAndPassword_form_input">
-											<input id="" placeholder="密码" />
+										<div class="user_login_form_UserAndPassword_form_input_forget_right">
+											<a th:href="@{#}"><span>忘记密码</span></a>
 										</div>
-										<div class="user_login_form_UserAndPassword_form_input_forget">
-											<div class="user_login_form_UserAndPassword_form_input_forget_left">
-												<input type="checkbox" /><span>记住密码</span>
-											</div>
-											<div class="user_login_form_UserAndPassword_form_input_forget_right">
-												<a th:href="@{#}"><span>忘记密码</span></a>
-											</div>
-										</div>
-										<div class="user_login_form_UserAndPassword_form_input_submit">
-											<input type="submit" name="" id="" value="登录" />
-										</div>
-									</form>
-									
+									</div>
+									<div class="user_login_form_UserAndPassword_form_input_submit">
+										<input type="submit" name="" id="" value="登录" />
+									</div>
+								</form>
+
 								<div class="user_login_form_UserAndPassword_QQlogin">
-									<input type="button" value="as"/>
+									<input type="button" value="as" />
 								</div>
 								<div class="user_login_form_regist">
 									<div class="user_login_form_regist_left">
@@ -688,14 +244,14 @@
 								</div>
 							</div>
 						</div>
-						
+
 						<div class="index_top_user_messageLogin">
-							
+
 						</div>
 					</div>
-				</div>
+				</div>-->
+				
 			</div>
-			<div class="index_top_blank"></div>
 		</div>
 
 		<div id="index_main">
@@ -936,7 +492,6 @@
 							</div>
 							<div class="index_main_right_LookForPeople_class_content">
 								<img th:src="@{/img/admin/music.png}" />
->>>>>>> branch 'master' of https://github.com/blues01sky/sinaBlog.git
 								<a th:href="@{#}">大师</a>
 							</div>
 						</div>

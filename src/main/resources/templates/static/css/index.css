@@ -28,14 +28,14 @@ a:hover {
 }
 
 .index_top_logo {
-	width: 10%;
+	width: 160px;
 	height: 100%;
 	background-image: url(../../resource/img/admin/logo.png);
 	float: left;
 }
 
 .index_top_search {
-	width: 25%;
+	width: 400px;
 	height: 100%;
 	background-color: #FFFFFF;
 	float: left;
@@ -60,19 +60,21 @@ a:hover {
 
 .index_top_BigBlank {
 	width: 9%;
+	min-width: 0;
 	height: 100%;
 	float: left;
 	background-color: #FFFFFF;
 }
 
 .index_top_navigation {
-	width: 30%;
+	width: 480px;
 	height: 100%;
-	float: left;
+	position: absolute;
+	margin-left: 800px;
 }
 
 .index_top_navigation_button {
-	margin-top: 4%;
+	margin-top: 15px;
 	margin-left: 1%;
 	width: 15%;
 	height: 60%;
@@ -81,7 +83,7 @@ a:hover {
 }
 
 .index_top_navigation_button img {
-	margin-top: 6%;
+	margin-top: 4px;
 	width: 18px;
 	height: 18px;
 }
@@ -93,10 +95,49 @@ a:hover {
 }
 
 .index_top_user {
-	width: 16%;
+	width: 256px;
 	height: 100%;
-	float: left;
+	margin-left: 1280px;
 }
+.index_top_user_messageLogin{
+}
+.index_top_user_messageLogin_left{
+	float: left;
+	width: 45%;
+	padding-right: 4%;
+	margin-top: 10px;
+	height: 30px;
+	border-right: 1px solid black;
+}
+.index_top_user_messageLogin_left img{
+	width: 25px;
+	height: 25px;
+	border-radius: 25px;
+}
+
+.index_top_user_messageLogin_left a{
+	vertical-align: 5px;
+}
+.index_top_user_messageLogin_right{
+	float: left;
+	width: 49%;
+	height: 30px;
+	margin-top: 10px;
+}
+.index_top_user_messageLogin_right img{
+	padding-left: 8px;
+	padding-right: 8px;
+	margin-top: 5px;
+}
+.index_top_user_messageLogin_right span{
+	font-size: smaller;
+	border-radius: 7px;
+	position: absolute;
+	margin-left: -15px;
+	background-color: black;
+	color: white;
+}
+
 
 .index_top_user_regist {
 	width: 49%;
@@ -331,59 +372,6 @@ a:hover {
 	width: 50%;
 	height: 100%;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .user_login_messagelogin_form_UserAndPassword
 {
 	display: none;

@@ -9,10 +9,7 @@ import javax.persistence.Table;
 @Entity
 @Table(name="user")
 public class User {
-<<<<<<< HEAD
-=======
 	
->>>>>>> branch 'master' of https://github.com/blues01sky/sinaBlog.git
 	@Id
 	@GeneratedValue(strategy= GenerationType.IDENTITY) // MYSQL时可以这样使用自增
 	private int id;

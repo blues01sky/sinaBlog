@@ -17,9 +17,6 @@ public class UserServiceImpl implements UserService {
 	public User findById(Integer id) {
 		return userRepository.findById(id);
 	}
-<<<<<<< HEAD
-	
-=======
 
 	@Override
 	public Integer addUser(String name, String password) {
@@ -44,5 +41,4 @@ public class UserServiceImpl implements UserService {
 		// TODO Auto-generated method stub
 		return userRepository.updateUser(newname, password, name);
 	}
->>>>>>> branch 'master' of https://github.com/blues01sky/sinaBlog.git
 }

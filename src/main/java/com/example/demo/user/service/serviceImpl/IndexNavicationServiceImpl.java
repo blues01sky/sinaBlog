@@ -1,13 +1,5 @@
 package com.example.demo.user.service.serviceImpl;
 
-<<<<<<< HEAD
-import org.springframework.stereotype.Service;
-
-import com.example.demo.user.service.IndexNavicationService;
-
-@Service
-public class IndexNavicationServiceImpl implements IndexNavicationService {
-=======
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -39,6 +31,5 @@ public class IndexNavicationServiceImpl implements IndexNavicationService {
 		// TODO Auto-generated method stub
 		return indexNavicationRepository.findAll();
 	}
->>>>>>> branch 'master' of https://github.com/blues01sky/sinaBlog.git
 	
 }

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+				<link rel="stylesheet" href="../../../static/bootstrap/css/bootstrap.css" />
+		<script type="text/javascript" src="../js/adminUser.js" ></script>
+		<script type="text/javascript" src="../../../static/jquery/jquery-3.4.1.min.js"></script>
+		<script type="text/javascript" src="../../../static/bootstrap/js/bootstrap.js"></script>
+		<title>data属性实现下拉菜单</title>
+	</head>
+
+	<body>
+		<div class="nav">
+			<div class="col-lg-3"></div>
+			<div class="col-lg-6">
+				<div class="input-group">
+					<input class="form-control" type="text" onfocusout="" />
+					<div class="input-group-btn dropdown">
+						<button class="btn btn-default dropdown" data-toggle="dropdown" onfocusout="">option<span class="caret"></span></button>
+						<ul class="dropdown-menu">
+							<li>
+								<a href="#">1</a>
+							</li>
+							<li>
+								<a href="#">2</a>
+							</li>
+							<li>
+								<a href="#">3</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3">
+				<ul class="nav nav-pills navbar-right">
+					<li role="presentation">
+						<a href="#" class="dropdown" data-toggle="dropdown" role="btn"><img style="width: 15px;height: 15px;border-radius: 15px;" src="../../resource/img/全屏.png" />MyIndex<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li>
+								<a href="#" class="btn">1</a>
+							</li>
+							<li>
+								<a href="#" class="btn">2</a>
+							</li>
+							<li>
+								<a href="#" class="btn">3</a>
+							</li>
+							<li role="separator" class="divider"></li>
+							<li>
+								<a href="#" class="btn">4</a>
+							</li>
+						</ul>
+					</li>
+					<li role="presentation">
+						<a href="#">message<span class="badge">num</span></a>
+					</li>
+					<li role="presentation">
+						<a href="#">Lock</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="nav">
+			<div class="col-lg-1">
+				<div class="navbar-left">
+					<a class="nav-header collapsed" data-toggle="collapse" href="#ssy">
+						<i class="glyphicon glyphicon-cog"></i> 系统管理
+						<span class="pull-right glyphicon glyphicon-chevron-toggle"></span>
+					</a>
+					<ul id="ssy" class="nav">
+						<li>
+							<a class="btn" href="adminAdmin.html">管理员管理&nbsp;<span class="caret"></span></a>
+						</li>
+						<li>
+							<a class="btn" href="adminUser.html">用户管理&nbsp;<span class="caret"></span></a>
+						</li>
+						<li>
+							<a class="btn" href="#">消息管理&nbsp;<span class="caret"></span></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>
