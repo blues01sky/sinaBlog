@@ -8,5 +8,6 @@ public class SinaBlogApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(SinaBlogApplication.class, args);
+		
 	}
 }
