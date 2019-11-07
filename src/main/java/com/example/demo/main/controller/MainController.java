@@ -17,12 +17,17 @@ public class MainController {
 	@Autowired
 	private IndexNavicationRepository indexNavicationRepository;
 	
-	@RequestMapping(value = "index",method = RequestMethod.GET)
+	@RequestMapping(value = "/index",method = RequestMethod.GET)
     public String hello(HttpServletRequest request){
 		
 		List<IndexNavication> navications= indexNavicationRepository.findAll();
 		System.out.println(navications);
 		request.setAttribute("navications", navications);
-        return "/web/index";
+        return "/index";
     }
+	
+	@RequestMapping(value="/",method = RequestMethod.GET)
+	public String index() {
+		return "/index";
+	}
 }

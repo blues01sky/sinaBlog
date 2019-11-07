@@ -1,23 +1,26 @@
 server:
-  port: 8081
+  port: 8084
+  servlet:
+    context-path: /weibo
 logging:
   level:
     com.nbclass: DEBUG
+    com.example.demo: trap
     tk.mybatis: DEBUG
     org.springframework: WARN
 spring:
-  datasource:
-    url: jdbc:mysql://127.0.0.1:3306/weibo?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
-    username: root
-    password: 1234
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    dbcp2: 
+  datasource: 
+   username: root
+   password: 1234
+   url: jdbc:mysql://localhost:3306/weibo?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8
+   driver-class-name: com.mysql.cj.jdbc.Driver
+   dbcp2: 
       min-idle: 10 
       initial-size: 10
       max-total: 10
       max-wait-millis: 200
   thymeleaf:
-    prefix: classpath:/templates/ 
+    prefix: classpath:/templates/web 
     check-template-location: true 
     suffix: .html 
     encoding: UTF-8 
@@ -30,5 +33,6 @@ spring:
       show-sql: true
   resources:
       static-locations: classpath:/templates/static/,classpath:/META-INF/resources/,classpath:/resources/,classpath:/resources/,classpath:/static/,classpath:/public/
-      
+
+    
       

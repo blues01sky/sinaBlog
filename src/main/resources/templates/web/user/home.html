@@ -4,15 +4,15 @@
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
-		<!--<link rel="stylesheet" th:href="@{/css/index.css}" />
+		<link rel="stylesheet" th:href="@{/css/index.css}" />
 		<link rel="stylesheet" th:href="@{/css/user/home.css}" />
 		<script th:src="@{/js/index.js}"></script>
-		<script type="text/javascript" th:src="@{/jquery/jquery-3.4.1.min.js}"></script>-->
-		<link rel="stylesheet" href="../../static/css/index.css" />
+		<script type="text/javascript" th:src="@{/jquery/jquery-3.4.1.min.js}"></script>
+		<!-- <link rel="stylesheet" href="../../static/css/index.css" />
 		<link rel="stylesheet" href="../../static/css/textDetial.css" />
 		<link rel="stylesheet" href="../../static/css/user/home.css" />
-		<script type="text/javascript" src="../../static/js/index.js"></script>
-		<script type="text/javascript" src="../../static/jquery/jquery-3.4.1.min.js"></script>
+		<script type="text/javascript" th:src="@{/static/js/index.js"></script>
+		<script type="text/javascript" th:src="@{/static/jquery/jquery-3.4.1.min.js"></script> -->
 		<script>
 			$(document).ready(function() {
 				var windowWidth = window.innerWidth;
@@ -106,32 +106,32 @@
 			<div class="index_top_logo" onclick="window.location.href='../index.html'"></div>
 			<div class="index_top_search">
 				<input id="index_top_search_input" placeholder="搜索" onblur="index_top_search();" />
-				<img src="../../../resource/img/admin/search_logo.png" />
+				<img th:src="@{/img/admin/search_logo.png}" />
 			</div>
 			<div class="index_top_BigBlank"></div>
 			<div class="index_top_navigation">
 				<div class="index_top_navigation_button">
-					<img src="../../../resource/img/admin/chat.png" />
+					<img th:src="@{/img/admin/chat.png}" />
 					<a href="" onclick="">按钮</a>
 				</div>
 				<div class="index_top_navigation_button">
-					<img src="../../../resource/img/admin/chat.png" />
+					<img th:src="@{/img/admin/chat.png}" />
 					<a href="" onclick="">按钮</a>
 				</div>
 				<div class="index_top_navigation_button">
-					<img src="../../../resource/img/admin/chat.png" />
+					<img th:src="@{/img/admin/chat.png}" />
 					<a href="" onclick="">按钮</a>
 				</div>
 				<div class="index_top_navigation_button">
-					<img src="../../../resource/img/admin/chat.png" />
+					<img th:src="@{/img/admin/chat.png}" />
 					<a href="" onclick="">按钮</a>
 				</div>
 				<div class="index_top_navigation_button">
-					<img src="../../../resource/img/admin/chat.png" />
+					<img th:src="@{/img/admin/chat.png}" />
 					<a href="" onclick="">按钮</a>
 				</div>
 				<div class="index_top_navigation_button">
-					<img src="../../../resource/img/admin/chat.png" />
+					<img th:src="@{/img/admin/chat.png}" />
 					<a href="" onclick="">按钮</a>
 				</div>
 
@@ -140,14 +140,14 @@
 			<div class="index_top_user">
 				<div class="index_top_user_messageLogin">
 					<div class="index_top_user_messageLogin_left">
-						<img src="../static/img/erweima.png" />
+						<img th:src="@{/img/erweima.png}" />
 						<a href="#">username</a>
 					</div>
 					<div class="index_top_user_messageLogin_right">
-						<img src="../static/img/admin/search_logo.png" />
+						<img th:src="@{/img/admin/search_logo.png}" />
 						<span>12</span>
-						<img src="../static/img/admin/search_logo.png" />
-						<img src="../static/img/admin/search_logo.png" />
+						<img th:src="@{/img/admin/search_logo.png}" />
+						<img th:src="@{/img/admin/search_logo.png}" />
 					</div>
 				</div>
 			</div>
@@ -156,26 +156,26 @@
 			<div class="home_user_home_left_navication">
 				<div class="home_user_home_left_navication_main">
 					<div class="home_user_home_left_navication_main_button" style="background-color: #7CFC00;">
-						<a th:href=""></a>
+						<!-- <a th:href="#"></a> -->
 					</div>
 					<div class="home_user_home_left_navication_main_button">
-						<a th:href=""></a>
+						<!-- <a th:href="#"></a> -->
 					</div>
 					<div class="home_user_home_left_navication_main_button">
-						<a th:href=""></a>
-					</div>
-				</div>
-				<div class="home_user_home_left_navication_main">
-					<div class="home_user_home_left_navication_main_button">
-						<a th:href=""></a>
-					</div>
-					<div class="home_user_home_left_navication_main_button">
-						<a th:href=""></a>
+					<!-- 	<a th:href="#"></a> -->
 					</div>
 				</div>
 				<div class="home_user_home_left_navication_main">
 					<div class="home_user_home_left_navication_main_button">
-						<img src="../../../resource/img/admin/password.png" />
+						<!-- <a th:href=""></a> -->
+					</div>
+					<div class="home_user_home_left_navication_main_button">
+						<!-- <a th:href=""></a> -->
+					</div>
+				</div>
+				<div class="home_user_home_left_navication_main">
+					<div class="home_user_home_left_navication_main_button">
+						<img th:src="@{/../resource/img/admin/password.png}" />
 						<a>192.168.0.1</a>
 					</div>
 				</div>
@@ -188,27 +188,27 @@
 				<div class="home_user_home_left_content_result">
 					<div class="home_user_home_left_content_result_left">
 						<div class="home_user_home_left_content_result_left_button">
-							<img src="../../../resource/img/admin/video.png" />
+							<img th:src="@{/img/admin/video.png}" />
 							<span onclick="">表情</span>
 						</div>
 						<div class="home_user_home_left_content_result_left_button">
-							<img src="../../../resource/img/admin/video.png" />
+							<img th:src="@{/img/admin/video.png}" />
+							<span onclick="">表情5</span>
+						</div>
+						<div class="home_user_home_left_content_result_left_button">
+							<img th:src="@{/img/admin/video.png}" />
 							<span onclick="">表情</span>
 						</div>
 						<div class="home_user_home_left_content_result_left_button">
-							<img src="../../../resource/img/admin/video.png" />
+							<img th:src="@{/img/admin/video.png}" />
 							<span onclick="">表情</span>
 						</div>
 						<div class="home_user_home_left_content_result_left_button">
-							<img src="../../../resource/img/admin/video.png" />
-							<span onclick="">表情</span>
-						</div>
-						<div class="home_user_home_left_content_result_left_button">
-							<img src="../../../resource/img/admin/video.png" />
+							<img th:src="@{/img/admin/video.png}" />
 							<span onclick="">表情表情</span>
 						</div>
 						<div class="home_user_home_left_content_result_left_button_more">
-							<img src="../../../resource/img/admin/video.png" />
+							<img th:src="@{/img/admin/video.png}" />
 							<span onclick="">...</span>
 						</div>
 					</div>
@@ -216,7 +216,7 @@
 						<div class="home_user_home_left_content_result_right_left">
 							<select class="home_user_home_left_content_result_right_left_select">
 								<option>123456</option>
-								<option selected="selected"><img src="../../../resource/img/admin/music.png">1234</option>
+								<option selected="selected"><img th:src="@{/img/admin/music.png}">1234</option>
 								<option>123456</option>
 								<option>123456</option>
 								<option>123456</option>
@@ -255,7 +255,7 @@
 				<div class="home_user_home_left_content_detail">
 					<div class="home_user_home_left_content_detail_user">
 						<div class="home_user_home_left_content_detail_user_headpic">
-							<img src="../../static/img/全屏.png" />
+							<img th:src="@{/img/全屏.png}" />
 						</div>
 						<div class="home_user_home_left_content_detail_user_right">
 							<div class="home_user_home_left_content_detail_user_right_top">
@@ -278,25 +278,25 @@
 								<button onclick="youxuan()">右旋</button>
 							</div>
 							<div class="text_main_content_picture">
-								<img id="text_main_content_picture1" onclick="big('text_main_content_picture','1')" src="../../static/img/全屏.png" />
+								<img id="text_main_content_picture1" onclick="big('text_main_content_picture','1')" th:src="@{/static/img/全屏.png}" />
 							</div>
 						</div>
 					</div>
 					<div class="text_main_content_neirong_remark">
 						<div class="text_main_content_neirong_remark_operate">
-							<img src="../../../resource/img/admin/chat.png" />
+							<img th:src="@{/img/admin/chat.png}" />
 							<a>收藏</a>
 						</div>
 						<div class="text_main_content_neirong_remark_operate">
-							<img src="../../../resource/img/admin/chat.png" />
+							<img th:src="@{/img/admin/chat.png}" />
 							<a>收藏</a>
 						</div>
 						<div class="text_main_content_neirong_remark_operate">
-							<img src="../../../resource/img/admin/chat.png" />
+							<img th:src="@{/img/admin/chat.png}" />
 							<a>收藏</a>
 						</div>
 						<div class="text_main_content_neirong_remark_operate_last">
-							<img src="../../../resource/img/admin/chat.png" />
+							<img th:src="@{/img/admin/chat.png}" />
 							<a>收藏</a>
 						</div>
 					</div>
@@ -305,7 +305,7 @@
 				<div class="home_user_home_left_content_detail">
 					<div class="home_user_home_left_content_detail_user">
 						<div class="home_user_home_left_content_detail_user_headpic">
-							<img src="../../static/img/全屏.png" />
+							<img th:src="@{/img/全屏.png}" />
 						</div>
 						<div class="home_user_home_left_content_detail_user_right">
 							<div class="home_user_home_left_content_detail_user_right_top">
@@ -328,25 +328,25 @@
 								<button onclick="youxuan()">右旋</button>
 							</div>
 							<div class="text_main_content_picture">
-								<img id="text_main_content_picture1" onclick="big('text_main_content_picture','1')" src="../../static/img/全屏.png" />
+								<img id="text_main_content_picture1" onclick="big('text_main_content_picture','1')" th:src="@{/static/img/全屏.png}" />
 							</div>
 						</div>
 					</div>
 					<div class="text_main_content_neirong_remark">
 						<div class="text_main_content_neirong_remark_operate">
-							<img src="../../../resource/img/admin/chat.png" />
+							<img th:src="@{/img/admin/chat.png}" />
 							<a>收藏</a>
 						</div>
 						<div class="text_main_content_neirong_remark_operate">
-							<img src="../../../resource/img/admin/chat.png" />
+							<img th:src="@{/img/admin/chat.png}" />
 							<a>收藏</a>
 						</div>
 						<div class="text_main_content_neirong_remark_operate">
-							<img src="../../../resource/img/admin/chat.png" />
+							<img th:src="@{/img/admin/chat.png}" />
 							<a>收藏</a>
 						</div>
 						<div class="text_main_content_neirong_remark_operate_last">
-							<img src="../../../resource/img/admin/chat.png" />
+							<img th:src="@{/img/admin/chat.png}" />
 							<a>收藏</a>
 						</div>
 					</div>
@@ -368,7 +368,7 @@
 				<div class="text_main_right_content">
 					<div class="text_main_right_content_userMessage">
 						<div class="text_main_right_content_userMessage_portrait">
-							<img src="../../resource/img/erweima.png" />
+							<img th:src="@{/resource/img/erweima.png}" />
 						</div>
 						<div class="text_main_right_content_userMessage_name">
 							<a href="#">网名</a>
@@ -389,20 +389,20 @@
 						</div>
 						<div class="text_main_right_content_detial_matter_video">
 							<video controls="controls" loop="loop" muted="muted">
-								<source src="../../resource/video/拥抱星星的月亮_13_Trim_Trim.mp4" type="video/mp4"></source>
+								<source th:src="@{/resource/video/拥抱星星的月亮_13_Trim_Trim.mp4}" type="video/mp4"></source>
 							</video>
 						</div>
 						<div class="text_main_right_content_detial_remark">
 							<div class="text_main_right_content_detial_remark_option_last">
-								<img src="../../resource/img/admin/music.png" />
+								<img th:src="@{/img/admin/music.png}" />
 								<a href="#">129</a>
 							</div>
 							<div class="text_main_right_content_detial_remark_option">
-								<img src="../../resource/img/admin/music.png" />
+								<img th:src="@{/img/admin/music.png}" />
 								<a href="#">189</a>
 							</div>
 							<div class="text_main_right_content_detial_remark_option">
-								<img src="../../resource/img/admin/music.png" />
+								<img th:src="@{/img/admin/music.png}" />
 								<a href="#">19</a>
 							</div>
 						</div>

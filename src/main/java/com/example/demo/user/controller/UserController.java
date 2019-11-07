@@ -10,29 +10,30 @@ import com.example.demo.user.service.UserService;
 @Controller
 @RequestMapping("/user")
 public class UserController {
+	
 	@Autowired
 	private UserService userService;
 	
 	@RequestMapping(value="/admin",method = RequestMethod.GET)
 	public String admin() {
-		return "web/hello";
+		return "/hello";
 	}
 	
 	@RequestMapping(value="/regist",method = RequestMethod.GET)
 	public String userHome() {
 		System.out.println("Sdf");
-		return "web/user/regist";
+		return "/user/regist";
 	}
 	
 	@RequestMapping(value="/home",method = RequestMethod.GET)
 	public String textDetial() {
 		System.out.println("Sdf");
-		return "web/user/home";
+		return "/user/home";
 	}
 	@RequestMapping(value="/textDetial",method = RequestMethod.GET)
 	public String userRegist() {
 		System.out.println("Sdf");
-		return "web/user/textDetial";
+		return "/user/textDetial";
 	}
 	
 }
